@@ -1,0 +1,8362 @@
+{
+  "Arsenal_vs_Aston Villa": {
+    "home": "Arsenal",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.3,
+        "draw": 7.6,
+        "away_win": 6.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.1,
+        "draw": 13.6,
+        "away_win": 4.3
+      }
+    }
+  },
+  "Arsenal_vs_Bournemouth": {
+    "home": "Arsenal",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.9,
+        "draw": 9.5,
+        "away_win": 1.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.8,
+        "draw": 10.2,
+        "away_win": 2.0
+      }
+    }
+  },
+  "Arsenal_vs_Brentford": {
+    "home": "Arsenal",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.0,
+        "draw": 10.8,
+        "away_win": 1.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.9,
+        "draw": 12.2,
+        "away_win": 1.9
+      }
+    }
+  },
+  "Arsenal_vs_Brighton": {
+    "home": "Arsenal",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 93.9,
+        "draw": 5.2,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.9,
+        "draw": 8.8,
+        "away_win": 2.3
+      }
+    }
+  },
+  "Arsenal_vs_Chelsea": {
+    "home": "Arsenal",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.1,
+        "draw": 17.5,
+        "away_win": 27.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.6,
+        "draw": 20.1,
+        "away_win": 26.3
+      }
+    }
+  },
+  "Arsenal_vs_Crystal Palace": {
+    "home": "Arsenal",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 93.2,
+        "draw": 5.3,
+        "away_win": 1.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.8,
+        "draw": 9.5,
+        "away_win": 2.7
+      }
+    }
+  },
+  "Arsenal_vs_Everton": {
+    "home": "Arsenal",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.1,
+        "draw": 18.9,
+        "away_win": 2.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.9,
+        "draw": 12.1,
+        "away_win": 2.0
+      }
+    }
+  },
+  "Arsenal_vs_Fulham": {
+    "home": "Arsenal",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 30.0,
+        "draw": 66.6,
+        "away_win": 3.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.4,
+        "draw": 38.7,
+        "away_win": 6.0
+      }
+    }
+  },
+  "Arsenal_vs_Ipswich Town": {
+    "home": "Arsenal",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.9,
+        "draw": 10.6,
+        "away_win": 1.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 70.7,
+        "draw": 26.3,
+        "away_win": 3.0
+      }
+    }
+  },
+  "Arsenal_vs_Leicester City": {
+    "home": "Arsenal",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 93.5,
+        "draw": 5.8,
+        "away_win": 0.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.6,
+        "draw": 10.0,
+        "away_win": 1.4
+      }
+    }
+  },
+  "Arsenal_vs_Liverpool": {
+    "home": "Arsenal",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.5,
+        "draw": 21.3,
+        "away_win": 20.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 34.7,
+        "draw": 27.2,
+        "away_win": 38.1
+      }
+    }
+  },
+  "Arsenal_vs_Manchester City": {
+    "home": "Arsenal",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 34.3,
+        "draw": 11.6,
+        "away_win": 54.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 18.0,
+        "draw": 22.4,
+        "away_win": 59.5
+      }
+    }
+  },
+  "Arsenal_vs_Manchester United": {
+    "home": "Arsenal",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.1,
+        "draw": 25.1,
+        "away_win": 6.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.7,
+        "draw": 25.3,
+        "away_win": 20.9
+      }
+    }
+  },
+  "Arsenal_vs_Newcastle": {
+    "home": "Arsenal",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.8,
+        "draw": 8.8,
+        "away_win": 1.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.7,
+        "draw": 13.0,
+        "away_win": 4.3
+      }
+    }
+  },
+  "Arsenal_vs_Nottingham Forest": {
+    "home": "Arsenal",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 95.0,
+        "draw": 4.3,
+        "away_win": 0.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.7,
+        "draw": 9.6,
+        "away_win": 1.7
+      }
+    }
+  },
+  "Arsenal_vs_Southampton": {
+    "home": "Arsenal",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.5,
+        "draw": 10.0,
+        "away_win": 1.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.9,
+        "draw": 11.8,
+        "away_win": 2.2
+      }
+    }
+  },
+  "Arsenal_vs_Tottenham": {
+    "home": "Arsenal",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.9,
+        "draw": 14.3,
+        "away_win": 2.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.2,
+        "draw": 15.9,
+        "away_win": 16.9
+      }
+    }
+  },
+  "Arsenal_vs_West Ham": {
+    "home": "Arsenal",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.3,
+        "draw": 5.9,
+        "away_win": 1.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 81.8,
+        "draw": 11.3,
+        "away_win": 7.0
+      }
+    }
+  },
+  "Arsenal_vs_Wolves": {
+    "home": "Arsenal",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 96.6,
+        "draw": 2.6,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 80.6,
+        "draw": 15.6,
+        "away_win": 3.8
+      }
+    }
+  },
+  "Aston Villa_vs_Arsenal": {
+    "home": "Aston Villa",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.7,
+        "draw": 34.6,
+        "away_win": 63.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.5,
+        "draw": 23.0,
+        "away_win": 73.5
+      }
+    }
+  },
+  "Aston Villa_vs_Bournemouth": {
+    "home": "Aston Villa",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.1,
+        "draw": 37.9,
+        "away_win": 8.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 63.3,
+        "draw": 25.3,
+        "away_win": 11.5
+      }
+    }
+  },
+  "Aston Villa_vs_Brentford": {
+    "home": "Aston Villa",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.1,
+        "draw": 34.9,
+        "away_win": 8.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 66.2,
+        "draw": 22.9,
+        "away_win": 10.9
+      }
+    }
+  },
+  "Aston Villa_vs_Brighton": {
+    "home": "Aston Villa",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 52.5,
+        "draw": 31.2,
+        "away_win": 16.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.4,
+        "draw": 22.7,
+        "away_win": 19.0
+      }
+    }
+  },
+  "Aston Villa_vs_Chelsea": {
+    "home": "Aston Villa",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 7.6,
+        "draw": 42.8,
+        "away_win": 49.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.8,
+        "draw": 22.1,
+        "away_win": 71.1
+      }
+    }
+  },
+  "Aston Villa_vs_Crystal Palace": {
+    "home": "Aston Villa",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 38.9,
+        "draw": 33.7,
+        "away_win": 27.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 62.3,
+        "draw": 22.4,
+        "away_win": 15.2
+      }
+    }
+  },
+  "Aston Villa_vs_Everton": {
+    "home": "Aston Villa",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 46.0,
+        "draw": 47.7,
+        "away_win": 6.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.5,
+        "draw": 25.2,
+        "away_win": 10.3
+      }
+    }
+  },
+  "Aston Villa_vs_Fulham": {
+    "home": "Aston Villa",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.3,
+        "draw": 47.0,
+        "away_win": 5.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.8,
+        "draw": 23.5,
+        "away_win": 10.7
+      }
+    }
+  },
+  "Aston Villa_vs_Ipswich Town": {
+    "home": "Aston Villa",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.6,
+        "draw": 18.3,
+        "away_win": 2.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 66.9,
+        "draw": 24.0,
+        "away_win": 9.2
+      }
+    }
+  },
+  "Aston Villa_vs_Leicester City": {
+    "home": "Aston Villa",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 81.9,
+        "draw": 16.4,
+        "away_win": 1.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 69.4,
+        "draw": 23.6,
+        "away_win": 6.9
+      }
+    }
+  },
+  "Aston Villa_vs_Liverpool": {
+    "home": "Aston Villa",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.1,
+        "draw": 40.3,
+        "away_win": 56.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.3,
+        "draw": 22.3,
+        "away_win": 72.4
+      }
+    }
+  },
+  "Aston Villa_vs_Manchester City": {
+    "home": "Aston Villa",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.4,
+        "draw": 24.3,
+        "away_win": 74.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.8,
+        "draw": 29.6,
+        "away_win": 68.7
+      }
+    }
+  },
+  "Aston Villa_vs_Manchester United": {
+    "home": "Aston Villa",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 34.1,
+        "draw": 45.6,
+        "away_win": 20.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 18.6,
+        "draw": 31.2,
+        "away_win": 50.3
+      }
+    }
+  },
+  "Aston Villa_vs_Newcastle": {
+    "home": "Aston Villa",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.1,
+        "draw": 20.1,
+        "away_win": 12.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 49.7,
+        "draw": 26.0,
+        "away_win": 24.4
+      }
+    }
+  },
+  "Aston Villa_vs_Nottingham Forest": {
+    "home": "Aston Villa",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.3,
+        "draw": 33.3,
+        "away_win": 7.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 62.3,
+        "draw": 24.7,
+        "away_win": 13.0
+      }
+    }
+  },
+  "Aston Villa_vs_Southampton": {
+    "home": "Aston Villa",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.6,
+        "draw": 15.0,
+        "away_win": 2.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.8,
+        "draw": 23.4,
+        "away_win": 7.8
+      }
+    }
+  },
+  "Aston Villa_vs_Tottenham": {
+    "home": "Aston Villa",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 26.0,
+        "draw": 32.8,
+        "away_win": 41.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 31.4,
+        "draw": 29.0,
+        "away_win": 39.6
+      }
+    }
+  },
+  "Aston Villa_vs_West Ham": {
+    "home": "Aston Villa",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 38.7,
+        "draw": 38.2,
+        "away_win": 23.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.4,
+        "draw": 21.2,
+        "away_win": 21.4
+      }
+    }
+  },
+  "Aston Villa_vs_Wolves": {
+    "home": "Aston Villa",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 48.6,
+        "draw": 43.4,
+        "away_win": 8.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.5,
+        "draw": 24.5,
+        "away_win": 17.0
+      }
+    }
+  },
+  "Bournemouth_vs_Arsenal": {
+    "home": "Bournemouth",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.0,
+        "draw": 4.5,
+        "away_win": 94.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.0,
+        "draw": 6.1,
+        "away_win": 90.9
+      }
+    }
+  },
+  "Bournemouth_vs_Aston Villa": {
+    "home": "Bournemouth",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 30.1,
+        "draw": 16.7,
+        "away_win": 53.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 28.9,
+        "draw": 26.5,
+        "away_win": 44.6
+      }
+    }
+  },
+  "Bournemouth_vs_Brentford": {
+    "home": "Bournemouth",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.4,
+        "draw": 19.5,
+        "away_win": 21.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.3,
+        "draw": 25.8,
+        "away_win": 23.9
+      }
+    }
+  },
+  "Bournemouth_vs_Brighton": {
+    "home": "Bournemouth",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 36.1,
+        "draw": 22.5,
+        "away_win": 41.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 35.6,
+        "draw": 24.3,
+        "away_win": 40.1
+      }
+    }
+  },
+  "Bournemouth_vs_Chelsea": {
+    "home": "Bournemouth",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.6,
+        "draw": 4.8,
+        "away_win": 91.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.9,
+        "draw": 9.1,
+        "away_win": 84.0
+      }
+    }
+  },
+  "Bournemouth_vs_Crystal Palace": {
+    "home": "Bournemouth",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 41.7,
+        "draw": 26.9,
+        "away_win": 31.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 48.4,
+        "draw": 23.0,
+        "away_win": 28.6
+      }
+    }
+  },
+  "Bournemouth_vs_Everton": {
+    "home": "Bournemouth",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.0,
+        "draw": 24.9,
+        "away_win": 17.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.6,
+        "draw": 26.7,
+        "away_win": 22.7
+      }
+    }
+  },
+  "Bournemouth_vs_Fulham": {
+    "home": "Bournemouth",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.6,
+        "draw": 7.6,
+        "away_win": 23.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 56.8,
+        "draw": 19.2,
+        "away_win": 24.0
+      }
+    }
+  },
+  "Bournemouth_vs_Ipswich Town": {
+    "home": "Bournemouth",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.4,
+        "draw": 22.0,
+        "away_win": 5.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 63.1,
+        "draw": 23.8,
+        "away_win": 13.1
+      }
+    }
+  },
+  "Bournemouth_vs_Leicester City": {
+    "home": "Bournemouth",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.7,
+        "draw": 23.1,
+        "away_win": 21.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.8,
+        "draw": 21.3,
+        "away_win": 20.9
+      }
+    }
+  },
+  "Bournemouth_vs_Liverpool": {
+    "home": "Bournemouth",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.0,
+        "draw": 5.2,
+        "away_win": 92.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.2,
+        "draw": 10.2,
+        "away_win": 85.6
+      }
+    }
+  },
+  "Bournemouth_vs_Manchester City": {
+    "home": "Bournemouth",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.1,
+        "draw": 10.5,
+        "away_win": 88.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.5,
+        "draw": 17.5,
+        "away_win": 80.0
+      }
+    }
+  },
+  "Bournemouth_vs_Manchester United": {
+    "home": "Bournemouth",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 7.8,
+        "draw": 36.6,
+        "away_win": 55.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 12.5,
+        "draw": 16.2,
+        "away_win": 71.3
+      }
+    }
+  },
+  "Bournemouth_vs_Newcastle": {
+    "home": "Bournemouth",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 39.5,
+        "draw": 21.1,
+        "away_win": 39.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 24.7,
+        "draw": 16.6,
+        "away_win": 58.7
+      }
+    }
+  },
+  "Bournemouth_vs_Nottingham Forest": {
+    "home": "Bournemouth",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 56.7,
+        "draw": 21.8,
+        "away_win": 21.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.6,
+        "draw": 28.5,
+        "away_win": 24.9
+      }
+    }
+  },
+  "Bournemouth_vs_Southampton": {
+    "home": "Bournemouth",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.8,
+        "draw": 19.2,
+        "away_win": 21.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.1,
+        "draw": 22.4,
+        "away_win": 17.4
+      }
+    }
+  },
+  "Bournemouth_vs_Tottenham": {
+    "home": "Bournemouth",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.6,
+        "draw": 31.0,
+        "away_win": 66.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 12.4,
+        "draw": 15.4,
+        "away_win": 72.2
+      }
+    }
+  },
+  "Bournemouth_vs_West Ham": {
+    "home": "Bournemouth",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 25.0,
+        "draw": 24.8,
+        "away_win": 50.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 32.4,
+        "draw": 22.6,
+        "away_win": 45.0
+      }
+    }
+  },
+  "Bournemouth_vs_Wolves": {
+    "home": "Bournemouth",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 43.9,
+        "draw": 18.9,
+        "away_win": 37.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.3,
+        "draw": 23.4,
+        "away_win": 23.3
+      }
+    }
+  },
+  "Brentford_vs_Arsenal": {
+    "home": "Brentford",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 0.6,
+        "draw": 2.3,
+        "away_win": 97.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.2,
+        "draw": 4.8,
+        "away_win": 94.0
+      }
+    }
+  },
+  "Brentford_vs_Aston Villa": {
+    "home": "Brentford",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.1,
+        "draw": 12.7,
+        "away_win": 40.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 38.8,
+        "draw": 20.7,
+        "away_win": 40.5
+      }
+    }
+  },
+  "Brentford_vs_Bournemouth": {
+    "home": "Brentford",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 77.0,
+        "draw": 11.3,
+        "away_win": 11.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.2,
+        "draw": 19.9,
+        "away_win": 14.9
+      }
+    }
+  },
+  "Brentford_vs_Brighton": {
+    "home": "Brentford",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.5,
+        "draw": 12.2,
+        "away_win": 34.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 43.8,
+        "draw": 19.6,
+        "away_win": 36.6
+      }
+    }
+  },
+  "Brentford_vs_Chelsea": {
+    "home": "Brentford",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.8,
+        "draw": 15.3,
+        "away_win": 80.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.6,
+        "draw": 7.6,
+        "away_win": 86.8
+      }
+    }
+  },
+  "Brentford_vs_Crystal Palace": {
+    "home": "Brentford",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 42.8,
+        "draw": 23.5,
+        "away_win": 33.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 56.8,
+        "draw": 21.8,
+        "away_win": 21.4
+      }
+    }
+  },
+  "Brentford_vs_Everton": {
+    "home": "Brentford",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 48.4,
+        "draw": 24.9,
+        "away_win": 26.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.3,
+        "draw": 18.9,
+        "away_win": 15.8
+      }
+    }
+  },
+  "Brentford_vs_Fulham": {
+    "home": "Brentford",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.6,
+        "draw": 13.1,
+        "away_win": 35.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.6,
+        "draw": 17.2,
+        "away_win": 18.2
+      }
+    }
+  },
+  "Brentford_vs_Ipswich Town": {
+    "home": "Brentford",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.7,
+        "draw": 19.5,
+        "away_win": 7.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 70.2,
+        "draw": 19.2,
+        "away_win": 10.6
+      }
+    }
+  },
+  "Brentford_vs_Leicester City": {
+    "home": "Brentford",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 70.8,
+        "draw": 12.5,
+        "away_win": 16.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.2,
+        "draw": 17.6,
+        "away_win": 14.2
+      }
+    }
+  },
+  "Brentford_vs_Liverpool": {
+    "home": "Brentford",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.6,
+        "draw": 17.9,
+        "away_win": 80.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.0,
+        "draw": 8.2,
+        "away_win": 88.8
+      }
+    }
+  },
+  "Brentford_vs_Manchester City": {
+    "home": "Brentford",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 0.8,
+        "draw": 5.4,
+        "away_win": 93.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.0,
+        "draw": 14.1,
+        "away_win": 84.9
+      }
+    }
+  },
+  "Brentford_vs_Manchester United": {
+    "home": "Brentford",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.1,
+        "draw": 18.4,
+        "away_win": 75.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 9.3,
+        "draw": 18.6,
+        "away_win": 72.1
+      }
+    }
+  },
+  "Brentford_vs_Newcastle": {
+    "home": "Brentford",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 36.0,
+        "draw": 14.6,
+        "away_win": 49.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 24.8,
+        "draw": 19.9,
+        "away_win": 55.3
+      }
+    }
+  },
+  "Brentford_vs_Nottingham Forest": {
+    "home": "Brentford",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 71.0,
+        "draw": 14.7,
+        "away_win": 14.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 63.9,
+        "draw": 21.0,
+        "away_win": 15.2
+      }
+    }
+  },
+  "Brentford_vs_Southampton": {
+    "home": "Brentford",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 80.1,
+        "draw": 13.1,
+        "away_win": 6.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.3,
+        "draw": 17.6,
+        "away_win": 10.1
+      }
+    }
+  },
+  "Brentford_vs_Tottenham": {
+    "home": "Brentford",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.5,
+        "draw": 24.9,
+        "away_win": 72.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.3,
+        "draw": 24.5,
+        "away_win": 65.1
+      }
+    }
+  },
+  "Brentford_vs_West Ham": {
+    "home": "Brentford",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 25.3,
+        "draw": 22.2,
+        "away_win": 52.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 39.4,
+        "draw": 19.9,
+        "away_win": 40.7
+      }
+    }
+  },
+  "Brentford_vs_Wolves": {
+    "home": "Brentford",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.5,
+        "draw": 14.7,
+        "away_win": 23.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.2,
+        "draw": 16.5,
+        "away_win": 19.3
+      }
+    }
+  },
+  "Brighton_vs_Arsenal": {
+    "home": "Brighton",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 0.9,
+        "draw": 29.3,
+        "away_win": 69.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.3,
+        "draw": 22.1,
+        "away_win": 73.6
+      }
+    }
+  },
+  "Brighton_vs_Aston Villa": {
+    "home": "Brighton",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.7,
+        "draw": 16.1,
+        "away_win": 22.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.3,
+        "draw": 22.2,
+        "away_win": 24.5
+      }
+    }
+  },
+  "Brighton_vs_Bournemouth": {
+    "home": "Brighton",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.7,
+        "draw": 38.0,
+        "away_win": 14.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.5,
+        "draw": 26.2,
+        "away_win": 14.3
+      }
+    }
+  },
+  "Brighton_vs_Brentford": {
+    "home": "Brighton",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.6,
+        "draw": 40.2,
+        "away_win": 13.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.6,
+        "draw": 25.6,
+        "away_win": 16.9
+      }
+    }
+  },
+  "Brighton_vs_Chelsea": {
+    "home": "Brighton",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 8.0,
+        "draw": 41.5,
+        "away_win": 50.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.6,
+        "draw": 20.2,
+        "away_win": 69.2
+      }
+    }
+  },
+  "Brighton_vs_Crystal Palace": {
+    "home": "Brighton",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 31.7,
+        "draw": 46.2,
+        "away_win": 22.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.6,
+        "draw": 27.9,
+        "away_win": 17.5
+      }
+    }
+  },
+  "Brighton_vs_Everton": {
+    "home": "Brighton",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.3,
+        "draw": 39.8,
+        "away_win": 13.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.1,
+        "draw": 25.2,
+        "away_win": 13.7
+      }
+    }
+  },
+  "Brighton_vs_Fulham": {
+    "home": "Brighton",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.6,
+        "draw": 16.9,
+        "away_win": 28.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.3,
+        "draw": 22.1,
+        "away_win": 16.6
+      }
+    }
+  },
+  "Brighton_vs_Ipswich Town": {
+    "home": "Brighton",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 84.5,
+        "draw": 11.3,
+        "away_win": 4.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 70.9,
+        "draw": 17.1,
+        "away_win": 12.1
+      }
+    }
+  },
+  "Brighton_vs_Leicester City": {
+    "home": "Brighton",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.7,
+        "draw": 45.9,
+        "away_win": 6.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.0,
+        "draw": 22.0,
+        "away_win": 10.0
+      }
+    }
+  },
+  "Brighton_vs_Liverpool": {
+    "home": "Brighton",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 5.1,
+        "draw": 60.1,
+        "away_win": 34.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 9.7,
+        "draw": 22.9,
+        "away_win": 67.4
+      }
+    }
+  },
+  "Brighton_vs_Manchester City": {
+    "home": "Brighton",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.4,
+        "draw": 21.0,
+        "away_win": 77.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.3,
+        "draw": 27.0,
+        "away_win": 69.7
+      }
+    }
+  },
+  "Brighton_vs_Manchester United": {
+    "home": "Brighton",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 17.7,
+        "draw": 64.0,
+        "away_win": 18.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 17.1,
+        "draw": 31.7,
+        "away_win": 51.2
+      }
+    }
+  },
+  "Brighton_vs_Newcastle": {
+    "home": "Brighton",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 39.8,
+        "draw": 27.7,
+        "away_win": 32.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 39.2,
+        "draw": 23.7,
+        "away_win": 37.1
+      }
+    }
+  },
+  "Brighton_vs_Nottingham Forest": {
+    "home": "Brighton",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 52.7,
+        "draw": 35.0,
+        "away_win": 12.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.5,
+        "draw": 27.5,
+        "away_win": 13.0
+      }
+    }
+  },
+  "Brighton_vs_Southampton": {
+    "home": "Brighton",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 76.4,
+        "draw": 13.3,
+        "away_win": 10.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 71.0,
+        "draw": 18.5,
+        "away_win": 10.6
+      }
+    }
+  },
+  "Brighton_vs_Tottenham": {
+    "home": "Brighton",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.1,
+        "draw": 43.7,
+        "away_win": 52.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 13.3,
+        "draw": 30.0,
+        "away_win": 56.7
+      }
+    }
+  },
+  "Brighton_vs_West Ham": {
+    "home": "Brighton",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 37.2,
+        "draw": 37.8,
+        "away_win": 25.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.2,
+        "draw": 24.5,
+        "away_win": 24.3
+      }
+    }
+  },
+  "Brighton_vs_Wolves": {
+    "home": "Brighton",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 44.1,
+        "draw": 30.6,
+        "away_win": 25.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.2,
+        "draw": 27.4,
+        "away_win": 17.4
+      }
+    }
+  },
+  "Chelsea_vs_Arsenal": {
+    "home": "Chelsea",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 20.7,
+        "draw": 31.9,
+        "away_win": 47.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 28.3,
+        "draw": 27.8,
+        "away_win": 43.9
+      }
+    }
+  },
+  "Chelsea_vs_Aston Villa": {
+    "home": "Chelsea",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 76.2,
+        "draw": 22.2,
+        "away_win": 1.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 73.6,
+        "draw": 20.3,
+        "away_win": 6.1
+      }
+    }
+  },
+  "Chelsea_vs_Bournemouth": {
+    "home": "Chelsea",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.7,
+        "draw": 12.0,
+        "away_win": 1.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.9,
+        "draw": 9.4,
+        "away_win": 2.7
+      }
+    }
+  },
+  "Chelsea_vs_Brentford": {
+    "home": "Chelsea",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.6,
+        "draw": 6.6,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 90.8,
+        "draw": 7.2,
+        "away_win": 2.0
+      }
+    }
+  },
+  "Chelsea_vs_Brighton": {
+    "home": "Chelsea",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 69.3,
+        "draw": 28.9,
+        "away_win": 1.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 76.6,
+        "draw": 18.7,
+        "away_win": 4.6
+      }
+    }
+  },
+  "Chelsea_vs_Crystal Palace": {
+    "home": "Chelsea",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 90.2,
+        "draw": 8.8,
+        "away_win": 1.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.1,
+        "draw": 9.7,
+        "away_win": 3.3
+      }
+    }
+  },
+  "Chelsea_vs_Everton": {
+    "home": "Chelsea",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 90.8,
+        "draw": 8.3,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 90.8,
+        "draw": 7.0,
+        "away_win": 2.2
+      }
+    }
+  },
+  "Chelsea_vs_Fulham": {
+    "home": "Chelsea",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 93.5,
+        "draw": 5.8,
+        "away_win": 0.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 90.7,
+        "draw": 7.0,
+        "away_win": 2.3
+      }
+    }
+  },
+  "Chelsea_vs_Ipswich Town": {
+    "home": "Chelsea",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.8,
+        "draw": 7.4,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.7,
+        "draw": 17.3,
+        "away_win": 2.9
+      }
+    }
+  },
+  "Chelsea_vs_Leicester City": {
+    "home": "Chelsea",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 96.1,
+        "draw": 3.4,
+        "away_win": 0.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.6,
+        "draw": 6.6,
+        "away_win": 1.8
+      }
+    }
+  },
+  "Chelsea_vs_Liverpool": {
+    "home": "Chelsea",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 35.5,
+        "draw": 49.1,
+        "away_win": 15.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 30.1,
+        "draw": 38.6,
+        "away_win": 31.4
+      }
+    }
+  },
+  "Chelsea_vs_Manchester City": {
+    "home": "Chelsea",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 24.6,
+        "draw": 33.2,
+        "away_win": 42.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 20.2,
+        "draw": 31.1,
+        "away_win": 48.7
+      }
+    }
+  },
+  "Chelsea_vs_Manchester United": {
+    "home": "Chelsea",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 37.4,
+        "draw": 52.1,
+        "away_win": 10.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 48.6,
+        "draw": 32.8,
+        "away_win": 18.6
+      }
+    }
+  },
+  "Chelsea_vs_Newcastle": {
+    "home": "Chelsea",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.2,
+        "draw": 24.7,
+        "away_win": 18.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.2,
+        "draw": 28.0,
+        "away_win": 10.7
+      }
+    }
+  },
+  "Chelsea_vs_Nottingham Forest": {
+    "home": "Chelsea",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.3,
+        "draw": 6.9,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.8,
+        "draw": 8.3,
+        "away_win": 2.9
+      }
+    }
+  },
+  "Chelsea_vs_Southampton": {
+    "home": "Chelsea",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.3,
+        "draw": 7.8,
+        "away_win": 1.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.4,
+        "draw": 8.5,
+        "away_win": 3.1
+      }
+    }
+  },
+  "Chelsea_vs_Tottenham": {
+    "home": "Chelsea",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 39.8,
+        "draw": 39.7,
+        "away_win": 20.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.3,
+        "draw": 27.2,
+        "away_win": 19.5
+      }
+    }
+  },
+  "Chelsea_vs_West Ham": {
+    "home": "Chelsea",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.1,
+        "draw": 40.3,
+        "away_win": 2.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.2,
+        "draw": 20.8,
+        "away_win": 7.0
+      }
+    }
+  },
+  "Chelsea_vs_Wolves": {
+    "home": "Chelsea",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.9,
+        "draw": 8.9,
+        "away_win": 1.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 74.9,
+        "draw": 20.7,
+        "away_win": 4.4
+      }
+    }
+  },
+  "Crystal Palace_vs_Arsenal": {
+    "home": "Crystal Palace",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.0,
+        "draw": 9.5,
+        "away_win": 89.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.5,
+        "draw": 14.2,
+        "away_win": 83.3
+      }
+    }
+  },
+  "Crystal Palace_vs_Aston Villa": {
+    "home": "Crystal Palace",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 38.3,
+        "draw": 16.8,
+        "away_win": 44.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 35.6,
+        "draw": 26.7,
+        "away_win": 37.8
+      }
+    }
+  },
+  "Crystal Palace_vs_Bournemouth": {
+    "home": "Crystal Palace",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.1,
+        "draw": 22.5,
+        "away_win": 16.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.3,
+        "draw": 23.5,
+        "away_win": 17.2
+      }
+    }
+  },
+  "Crystal Palace_vs_Brentford": {
+    "home": "Crystal Palace",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.1,
+        "draw": 27.2,
+        "away_win": 15.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.4,
+        "draw": 23.4,
+        "away_win": 17.2
+      }
+    }
+  },
+  "Crystal Palace_vs_Brighton": {
+    "home": "Crystal Palace",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.5,
+        "draw": 22.0,
+        "away_win": 18.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.9,
+        "draw": 27.5,
+        "away_win": 24.6
+      }
+    }
+  },
+  "Crystal Palace_vs_Chelsea": {
+    "home": "Crystal Palace",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 7.3,
+        "draw": 28.7,
+        "away_win": 64.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.6,
+        "draw": 13.5,
+        "away_win": 79.8
+      }
+    }
+  },
+  "Crystal Palace_vs_Everton": {
+    "home": "Crystal Palace",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.7,
+        "draw": 35.9,
+        "away_win": 13.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.7,
+        "draw": 25.0,
+        "away_win": 17.3
+      }
+    }
+  },
+  "Crystal Palace_vs_Fulham": {
+    "home": "Crystal Palace",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 74.4,
+        "draw": 5.9,
+        "away_win": 19.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.9,
+        "draw": 18.7,
+        "away_win": 19.4
+      }
+    }
+  },
+  "Crystal Palace_vs_Ipswich Town": {
+    "home": "Crystal Palace",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.0,
+        "draw": 10.1,
+        "away_win": 2.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.7,
+        "draw": 20.8,
+        "away_win": 14.5
+      }
+    }
+  },
+  "Crystal Palace_vs_Leicester City": {
+    "home": "Crystal Palace",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.0,
+        "draw": 37.4,
+        "away_win": 7.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 66.0,
+        "draw": 21.8,
+        "away_win": 12.2
+      }
+    }
+  },
+  "Crystal Palace_vs_Liverpool": {
+    "home": "Crystal Palace",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.0,
+        "draw": 44.7,
+        "away_win": 52.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.7,
+        "draw": 17.6,
+        "away_win": 77.6
+      }
+    }
+  },
+  "Crystal Palace_vs_Manchester City": {
+    "home": "Crystal Palace",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.0,
+        "draw": 18.7,
+        "away_win": 80.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.7,
+        "draw": 22.3,
+        "away_win": 76.0
+      }
+    }
+  },
+  "Crystal Palace_vs_Manchester United": {
+    "home": "Crystal Palace",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 14.3,
+        "draw": 49.9,
+        "away_win": 35.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 15.3,
+        "draw": 23.0,
+        "away_win": 61.8
+      }
+    }
+  },
+  "Crystal Palace_vs_Newcastle": {
+    "home": "Crystal Palace",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 44.6,
+        "draw": 21.7,
+        "away_win": 33.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 28.6,
+        "draw": 20.8,
+        "away_win": 50.6
+      }
+    }
+  },
+  "Crystal Palace_vs_Nottingham Forest": {
+    "home": "Crystal Palace",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.2,
+        "draw": 29.2,
+        "away_win": 17.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 56.5,
+        "draw": 26.0,
+        "away_win": 17.5
+      }
+    }
+  },
+  "Crystal Palace_vs_Southampton": {
+    "home": "Crystal Palace",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.2,
+        "draw": 27.5,
+        "away_win": 8.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.9,
+        "draw": 22.8,
+        "away_win": 12.3
+      }
+    }
+  },
+  "Crystal Palace_vs_Tottenham": {
+    "home": "Crystal Palace",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.8,
+        "draw": 36.8,
+        "away_win": 58.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 13.6,
+        "draw": 19.2,
+        "away_win": 67.1
+      }
+    }
+  },
+  "Crystal Palace_vs_West Ham": {
+    "home": "Crystal Palace",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 29.8,
+        "draw": 40.4,
+        "away_win": 29.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.1,
+        "draw": 23.3,
+        "away_win": 30.5
+      }
+    }
+  },
+  "Crystal Palace_vs_Wolves": {
+    "home": "Crystal Palace",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 48.0,
+        "draw": 20.2,
+        "away_win": 31.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.8,
+        "draw": 23.0,
+        "away_win": 18.3
+      }
+    }
+  },
+  "Everton_vs_Arsenal": {
+    "home": "Everton",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 0.8,
+        "draw": 2.7,
+        "away_win": 96.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.2,
+        "draw": 6.8,
+        "away_win": 92.0
+      }
+    }
+  },
+  "Everton_vs_Aston Villa": {
+    "home": "Everton",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 21.4,
+        "draw": 27.0,
+        "away_win": 51.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 32.8,
+        "draw": 24.5,
+        "away_win": 42.7
+      }
+    }
+  },
+  "Everton_vs_Bournemouth": {
+    "home": "Everton",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.8,
+        "draw": 22.9,
+        "away_win": 17.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 52.5,
+        "draw": 24.4,
+        "away_win": 23.2
+      }
+    }
+  },
+  "Everton_vs_Brentford": {
+    "home": "Everton",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 34.7,
+        "draw": 37.8,
+        "away_win": 27.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.2,
+        "draw": 23.6,
+        "away_win": 23.2
+      }
+    }
+  },
+  "Everton_vs_Brighton": {
+    "home": "Everton",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.5,
+        "draw": 17.4,
+        "away_win": 29.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 42.4,
+        "draw": 19.4,
+        "away_win": 38.3
+      }
+    }
+  },
+  "Everton_vs_Chelsea": {
+    "home": "Everton",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.7,
+        "draw": 4.4,
+        "away_win": 91.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.3,
+        "draw": 6.7,
+        "away_win": 87.0
+      }
+    }
+  },
+  "Everton_vs_Crystal Palace": {
+    "home": "Everton",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 38.8,
+        "draw": 28.2,
+        "away_win": 33.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.9,
+        "draw": 19.5,
+        "away_win": 25.6
+      }
+    }
+  },
+  "Everton_vs_Fulham": {
+    "home": "Everton",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.4,
+        "draw": 15.3,
+        "away_win": 34.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.4,
+        "draw": 18.6,
+        "away_win": 24.0
+      }
+    }
+  },
+  "Everton_vs_Ipswich Town": {
+    "home": "Everton",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 70.6,
+        "draw": 23.5,
+        "away_win": 5.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.3,
+        "draw": 19.5,
+        "away_win": 12.2
+      }
+    }
+  },
+  "Everton_vs_Leicester City": {
+    "home": "Everton",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.0,
+        "draw": 32.7,
+        "away_win": 20.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.5,
+        "draw": 19.5,
+        "away_win": 20.0
+      }
+    }
+  },
+  "Everton_vs_Liverpool": {
+    "home": "Everton",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.8,
+        "draw": 5.1,
+        "away_win": 93.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.3,
+        "draw": 6.2,
+        "away_win": 90.5
+      }
+    }
+  },
+  "Everton_vs_Manchester City": {
+    "home": "Everton",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.0,
+        "draw": 6.9,
+        "away_win": 92.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.6,
+        "draw": 15.9,
+        "away_win": 82.5
+      }
+    }
+  },
+  "Everton_vs_Manchester United": {
+    "home": "Everton",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.3,
+        "draw": 22.2,
+        "away_win": 72.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.3,
+        "draw": 15.5,
+        "away_win": 74.3
+      }
+    }
+  },
+  "Everton_vs_Newcastle": {
+    "home": "Everton",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 35.1,
+        "draw": 21.4,
+        "away_win": 43.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 23.0,
+        "draw": 17.1,
+        "away_win": 59.8
+      }
+    }
+  },
+  "Everton_vs_Nottingham Forest": {
+    "home": "Everton",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.9,
+        "draw": 18.6,
+        "away_win": 13.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.0,
+        "draw": 23.0,
+        "away_win": 22.0
+      }
+    }
+  },
+  "Everton_vs_Southampton": {
+    "home": "Everton",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.4,
+        "draw": 15.0,
+        "away_win": 12.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.4,
+        "draw": 18.3,
+        "away_win": 14.4
+      }
+    }
+  },
+  "Everton_vs_Tottenham": {
+    "home": "Everton",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.7,
+        "draw": 22.9,
+        "away_win": 74.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.0,
+        "draw": 16.2,
+        "away_win": 73.8
+      }
+    }
+  },
+  "Everton_vs_West Ham": {
+    "home": "Everton",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 23.2,
+        "draw": 29.6,
+        "away_win": 47.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 32.2,
+        "draw": 19.3,
+        "away_win": 48.5
+      }
+    }
+  },
+  "Everton_vs_Wolves": {
+    "home": "Everton",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.9,
+        "draw": 24.8,
+        "away_win": 28.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 56.5,
+        "draw": 19.4,
+        "away_win": 24.1
+      }
+    }
+  },
+  "Fulham_vs_Arsenal": {
+    "home": "Fulham",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.1,
+        "draw": 2.7,
+        "away_win": 96.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.6,
+        "draw": 11.5,
+        "away_win": 85.9
+      }
+    }
+  },
+  "Fulham_vs_Aston Villa": {
+    "home": "Fulham",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 77.0,
+        "draw": 10.9,
+        "away_win": 12.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 43.1,
+        "draw": 22.2,
+        "away_win": 34.8
+      }
+    }
+  },
+  "Fulham_vs_Bournemouth": {
+    "home": "Fulham",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.8,
+        "draw": 18.9,
+        "away_win": 8.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.4,
+        "draw": 25.5,
+        "away_win": 20.1
+      }
+    }
+  },
+  "Fulham_vs_Brentford": {
+    "home": "Fulham",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.9,
+        "draw": 25.6,
+        "away_win": 16.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.7,
+        "draw": 22.5,
+        "away_win": 16.7
+      }
+    }
+  },
+  "Fulham_vs_Brighton": {
+    "home": "Fulham",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 34.6,
+        "draw": 34.4,
+        "away_win": 31.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 32.0,
+        "draw": 23.9,
+        "away_win": 44.1
+      }
+    }
+  },
+  "Fulham_vs_Chelsea": {
+    "home": "Fulham",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.9,
+        "draw": 9.1,
+        "away_win": 83.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.6,
+        "draw": 18.6,
+        "away_win": 75.8
+      }
+    }
+  },
+  "Fulham_vs_Crystal Palace": {
+    "home": "Fulham",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.6,
+        "draw": 19.9,
+        "away_win": 25.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.7,
+        "draw": 21.3,
+        "away_win": 28.0
+      }
+    }
+  },
+  "Fulham_vs_Everton": {
+    "home": "Fulham",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 66.7,
+        "draw": 22.1,
+        "away_win": 11.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.2,
+        "draw": 25.9,
+        "away_win": 18.9
+      }
+    }
+  },
+  "Fulham_vs_Ipswich Town": {
+    "home": "Fulham",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.3,
+        "draw": 14.4,
+        "away_win": 3.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.5,
+        "draw": 20.7,
+        "away_win": 11.8
+      }
+    }
+  },
+  "Fulham_vs_Leicester City": {
+    "home": "Fulham",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 83.1,
+        "draw": 11.5,
+        "away_win": 5.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.2,
+        "draw": 18.8,
+        "away_win": 14.0
+      }
+    }
+  },
+  "Fulham_vs_Liverpool": {
+    "home": "Fulham",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.3,
+        "draw": 5.3,
+        "away_win": 91.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.6,
+        "draw": 14.8,
+        "away_win": 81.6
+      }
+    }
+  },
+  "Fulham_vs_Manchester City": {
+    "home": "Fulham",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.7,
+        "draw": 6.4,
+        "away_win": 91.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.2,
+        "draw": 21.0,
+        "away_win": 75.8
+      }
+    }
+  },
+  "Fulham_vs_Manchester United": {
+    "home": "Fulham",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 18.0,
+        "draw": 33.2,
+        "away_win": 48.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 12.2,
+        "draw": 20.2,
+        "away_win": 67.6
+      }
+    }
+  },
+  "Fulham_vs_Newcastle": {
+    "home": "Fulham",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 35.6,
+        "draw": 33.0,
+        "away_win": 31.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 21.6,
+        "draw": 27.8,
+        "away_win": 50.6
+      }
+    }
+  },
+  "Fulham_vs_Nottingham Forest": {
+    "home": "Fulham",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 77.0,
+        "draw": 15.3,
+        "away_win": 7.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.8,
+        "draw": 26.2,
+        "away_win": 19.0
+      }
+    }
+  },
+  "Fulham_vs_Southampton": {
+    "home": "Fulham",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 78.6,
+        "draw": 13.4,
+        "away_win": 8.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.6,
+        "draw": 18.9,
+        "away_win": 12.5
+      }
+    }
+  },
+  "Fulham_vs_Tottenham": {
+    "home": "Fulham",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.0,
+        "draw": 32.7,
+        "away_win": 63.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 8.7,
+        "draw": 30.0,
+        "away_win": 61.4
+      }
+    }
+  },
+  "Fulham_vs_West Ham": {
+    "home": "Fulham",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 30.8,
+        "draw": 30.4,
+        "away_win": 38.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 31.0,
+        "draw": 25.6,
+        "away_win": 43.4
+      }
+    }
+  },
+  "Fulham_vs_Wolves": {
+    "home": "Fulham",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.1,
+        "draw": 22.7,
+        "away_win": 17.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.6,
+        "draw": 22.9,
+        "away_win": 25.5
+      }
+    }
+  },
+  "Ipswich Town_vs_Arsenal": {
+    "home": "Ipswich Town",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.3,
+        "draw": 2.1,
+        "away_win": 96.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.0,
+        "draw": 7.3,
+        "away_win": 90.7
+      }
+    }
+  },
+  "Ipswich Town_vs_Aston Villa": {
+    "home": "Ipswich Town",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 14.9,
+        "draw": 4.3,
+        "away_win": 80.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 28.0,
+        "draw": 19.4,
+        "away_win": 52.5
+      }
+    }
+  },
+  "Ipswich Town_vs_Bournemouth": {
+    "home": "Ipswich Town",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 77.6,
+        "draw": 4.8,
+        "away_win": 17.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 43.8,
+        "draw": 23.7,
+        "away_win": 32.4
+      }
+    }
+  },
+  "Ipswich Town_vs_Brentford": {
+    "home": "Ipswich Town",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 15.1,
+        "draw": 25.2,
+        "away_win": 59.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 30.5,
+        "draw": 23.6,
+        "away_win": 45.9
+      }
+    }
+  },
+  "Ipswich Town_vs_Brighton": {
+    "home": "Ipswich Town",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 24.9,
+        "draw": 8.7,
+        "away_win": 66.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 26.1,
+        "draw": 15.4,
+        "away_win": 58.5
+      }
+    }
+  },
+  "Ipswich Town_vs_Chelsea": {
+    "home": "Ipswich Town",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.2,
+        "draw": 3.9,
+        "away_win": 92.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.4,
+        "draw": 7.2,
+        "away_win": 88.4
+      }
+    }
+  },
+  "Ipswich Town_vs_Crystal Palace": {
+    "home": "Ipswich Town",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 13.0,
+        "draw": 6.8,
+        "away_win": 80.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 33.4,
+        "draw": 15.2,
+        "away_win": 51.4
+      }
+    }
+  },
+  "Ipswich Town_vs_Everton": {
+    "home": "Ipswich Town",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 21.4,
+        "draw": 22.4,
+        "away_win": 56.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 36.4,
+        "draw": 23.2,
+        "away_win": 40.4
+      }
+    }
+  },
+  "Ipswich Town_vs_Fulham": {
+    "home": "Ipswich Town",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 43.7,
+        "draw": 7.4,
+        "away_win": 48.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 41.2,
+        "draw": 23.4,
+        "away_win": 35.4
+      }
+    }
+  },
+  "Ipswich Town_vs_Leicester City": {
+    "home": "Ipswich Town",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.5,
+        "draw": 16.6,
+        "away_win": 27.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 42.9,
+        "draw": 21.8,
+        "away_win": 35.3
+      }
+    }
+  },
+  "Ipswich Town_vs_Liverpool": {
+    "home": "Ipswich Town",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.7,
+        "draw": 3.0,
+        "away_win": 95.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.7,
+        "draw": 7.0,
+        "away_win": 90.3
+      }
+    }
+  },
+  "Ipswich Town_vs_Manchester City": {
+    "home": "Ipswich Town",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.5,
+        "draw": 5.4,
+        "away_win": 93.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.9,
+        "draw": 16.3,
+        "away_win": 81.7
+      }
+    }
+  },
+  "Ipswich Town_vs_Manchester United": {
+    "home": "Ipswich Town",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.1,
+        "draw": 1.1,
+        "away_win": 94.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 11.5,
+        "draw": 11.8,
+        "away_win": 76.7
+      }
+    }
+  },
+  "Ipswich Town_vs_Newcastle": {
+    "home": "Ipswich Town",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 28.1,
+        "draw": 2.0,
+        "away_win": 69.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 23.1,
+        "draw": 12.1,
+        "away_win": 64.8
+      }
+    }
+  },
+  "Ipswich Town_vs_Nottingham Forest": {
+    "home": "Ipswich Town",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 78.1,
+        "draw": 4.1,
+        "away_win": 17.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 45.1,
+        "draw": 19.8,
+        "away_win": 35.1
+      }
+    }
+  },
+  "Ipswich Town_vs_Southampton": {
+    "home": "Ipswich Town",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.4,
+        "draw": 16.2,
+        "away_win": 19.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 49.5,
+        "draw": 22.9,
+        "away_win": 27.7
+      }
+    }
+  },
+  "Ipswich Town_vs_Tottenham": {
+    "home": "Ipswich Town",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.4,
+        "draw": 1.7,
+        "away_win": 95.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 13.1,
+        "draw": 10.3,
+        "away_win": 76.6
+      }
+    }
+  },
+  "Ipswich Town_vs_West Ham": {
+    "home": "Ipswich Town",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 7.6,
+        "draw": 16.1,
+        "away_win": 76.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 16.4,
+        "draw": 20.2,
+        "away_win": 63.4
+      }
+    }
+  },
+  "Ipswich Town_vs_Wolves": {
+    "home": "Ipswich Town",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 21.5,
+        "draw": 7.8,
+        "away_win": 70.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 35.0,
+        "draw": 17.2,
+        "away_win": 47.8
+      }
+    }
+  },
+  "Leicester City_vs_Arsenal": {
+    "home": "Leicester City",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.0,
+        "draw": 7.8,
+        "away_win": 91.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.8,
+        "draw": 9.0,
+        "away_win": 89.2
+      }
+    }
+  },
+  "Leicester City_vs_Aston Villa": {
+    "home": "Leicester City",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 23.4,
+        "draw": 31.9,
+        "away_win": 44.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 33.1,
+        "draw": 19.0,
+        "away_win": 47.9
+      }
+    }
+  },
+  "Leicester City_vs_Bournemouth": {
+    "home": "Leicester City",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 37.7,
+        "draw": 29.3,
+        "away_win": 33.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 41.7,
+        "draw": 23.8,
+        "away_win": 34.5
+      }
+    }
+  },
+  "Leicester City_vs_Brentford": {
+    "home": "Leicester City",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 14.3,
+        "draw": 34.5,
+        "away_win": 51.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 37.9,
+        "draw": 21.8,
+        "away_win": 40.3
+      }
+    }
+  },
+  "Leicester City_vs_Brighton": {
+    "home": "Leicester City",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 27.3,
+        "draw": 32.3,
+        "away_win": 40.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 27.6,
+        "draw": 19.0,
+        "away_win": 53.4
+      }
+    }
+  },
+  "Leicester City_vs_Chelsea": {
+    "home": "Leicester City",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.5,
+        "draw": 6.0,
+        "away_win": 90.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.4,
+        "draw": 7.2,
+        "away_win": 88.3
+      }
+    }
+  },
+  "Leicester City_vs_Crystal Palace": {
+    "home": "Leicester City",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 24.8,
+        "draw": 24.4,
+        "away_win": 50.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 35.3,
+        "draw": 19.2,
+        "away_win": 45.5
+      }
+    }
+  },
+  "Leicester City_vs_Everton": {
+    "home": "Leicester City",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 23.2,
+        "draw": 36.3,
+        "away_win": 40.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 40.9,
+        "draw": 22.9,
+        "away_win": 36.2
+      }
+    }
+  },
+  "Leicester City_vs_Fulham": {
+    "home": "Leicester City",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.2,
+        "draw": 13.7,
+        "away_win": 28.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.3,
+        "draw": 20.4,
+        "away_win": 33.4
+      }
+    }
+  },
+  "Leicester City_vs_Ipswich Town": {
+    "home": "Leicester City",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.8,
+        "draw": 29.0,
+        "away_win": 15.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.3,
+        "draw": 22.4,
+        "away_win": 16.2
+      }
+    }
+  },
+  "Leicester City_vs_Liverpool": {
+    "home": "Leicester City",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.2,
+        "draw": 3.4,
+        "away_win": 95.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.7,
+        "draw": 5.8,
+        "away_win": 91.5
+      }
+    }
+  },
+  "Leicester City_vs_Manchester City": {
+    "home": "Leicester City",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.5,
+        "draw": 13.2,
+        "away_win": 85.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.4,
+        "draw": 16.4,
+        "away_win": 81.1
+      }
+    }
+  },
+  "Leicester City_vs_Manchester United": {
+    "home": "Leicester City",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.2,
+        "draw": 7.4,
+        "away_win": 86.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.8,
+        "draw": 11.8,
+        "away_win": 77.4
+      }
+    }
+  },
+  "Leicester City_vs_Newcastle": {
+    "home": "Leicester City",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 23.2,
+        "draw": 23.2,
+        "away_win": 53.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 19.0,
+        "draw": 14.9,
+        "away_win": 66.0
+      }
+    }
+  },
+  "Leicester City_vs_Nottingham Forest": {
+    "home": "Leicester City",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 45.9,
+        "draw": 24.6,
+        "away_win": 29.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 44.2,
+        "draw": 19.6,
+        "away_win": 36.2
+      }
+    }
+  },
+  "Leicester City_vs_Southampton": {
+    "home": "Leicester City",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.0,
+        "draw": 33.7,
+        "away_win": 15.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.7,
+        "draw": 23.4,
+        "away_win": 19.0
+      }
+    }
+  },
+  "Leicester City_vs_Tottenham": {
+    "home": "Leicester City",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.2,
+        "draw": 6.1,
+        "away_win": 91.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 11.0,
+        "draw": 12.0,
+        "away_win": 77.0
+      }
+    }
+  },
+  "Leicester City_vs_West Ham": {
+    "home": "Leicester City",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.9,
+        "draw": 34.8,
+        "away_win": 59.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 19.7,
+        "draw": 20.2,
+        "away_win": 60.1
+      }
+    }
+  },
+  "Leicester City_vs_Wolves": {
+    "home": "Leicester City",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 33.3,
+        "draw": 35.0,
+        "away_win": 31.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 38.5,
+        "draw": 21.5,
+        "away_win": 40.0
+      }
+    }
+  },
+  "Liverpool_vs_Arsenal": {
+    "home": "Liverpool",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 13.4,
+        "draw": 13.8,
+        "away_win": 72.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 24.2,
+        "draw": 22.2,
+        "away_win": 53.6
+      }
+    }
+  },
+  "Liverpool_vs_Aston Villa": {
+    "home": "Liverpool",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 80.3,
+        "draw": 10.8,
+        "away_win": 9.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 73.9,
+        "draw": 19.7,
+        "away_win": 6.4
+      }
+    }
+  },
+  "Liverpool_vs_Bournemouth": {
+    "home": "Liverpool",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 83.7,
+        "draw": 14.6,
+        "away_win": 1.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.6,
+        "draw": 9.0,
+        "away_win": 2.4
+      }
+    }
+  },
+  "Liverpool_vs_Brentford": {
+    "home": "Liverpool",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.5,
+        "draw": 9.3,
+        "away_win": 1.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.2,
+        "draw": 9.0,
+        "away_win": 1.8
+      }
+    }
+  },
+  "Liverpool_vs_Brighton": {
+    "home": "Liverpool",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 84.7,
+        "draw": 13.1,
+        "away_win": 2.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.4,
+        "draw": 11.5,
+        "away_win": 3.1
+      }
+    }
+  },
+  "Liverpool_vs_Chelsea": {
+    "home": "Liverpool",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.5,
+        "draw": 19.6,
+        "away_win": 29.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.6,
+        "draw": 22.4,
+        "away_win": 31.0
+      }
+    }
+  },
+  "Liverpool_vs_Crystal Palace": {
+    "home": "Liverpool",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.4,
+        "draw": 8.8,
+        "away_win": 1.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.2,
+        "draw": 9.7,
+        "away_win": 3.1
+      }
+    }
+  },
+  "Liverpool_vs_Everton": {
+    "home": "Liverpool",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.8,
+        "draw": 9.0,
+        "away_win": 1.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.6,
+        "draw": 8.4,
+        "away_win": 2.0
+      }
+    }
+  },
+  "Liverpool_vs_Fulham": {
+    "home": "Liverpool",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.3,
+        "draw": 31.1,
+        "away_win": 3.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 75.3,
+        "draw": 18.6,
+        "away_win": 6.1
+      }
+    }
+  },
+  "Liverpool_vs_Ipswich Town": {
+    "home": "Liverpool",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.9,
+        "draw": 10.7,
+        "away_win": 1.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 78.5,
+        "draw": 18.4,
+        "away_win": 3.1
+      }
+    }
+  },
+  "Liverpool_vs_Leicester City": {
+    "home": "Liverpool",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 96.4,
+        "draw": 3.0,
+        "away_win": 0.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.8,
+        "draw": 6.8,
+        "away_win": 1.4
+      }
+    }
+  },
+  "Liverpool_vs_Manchester City": {
+    "home": "Liverpool",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 16.8,
+        "draw": 14.5,
+        "away_win": 68.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 19.0,
+        "draw": 28.1,
+        "away_win": 52.9
+      }
+    }
+  },
+  "Liverpool_vs_Manchester United": {
+    "home": "Liverpool",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.2,
+        "draw": 30.2,
+        "away_win": 18.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.7,
+        "draw": 27.0,
+        "away_win": 25.3
+      }
+    }
+  },
+  "Liverpool_vs_Newcastle": {
+    "home": "Liverpool",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.0,
+        "draw": 11.9,
+        "away_win": 20.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 71.5,
+        "draw": 17.7,
+        "away_win": 10.8
+      }
+    }
+  },
+  "Liverpool_vs_Nottingham Forest": {
+    "home": "Liverpool",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.2,
+        "draw": 7.0,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.8,
+        "draw": 7.7,
+        "away_win": 2.5
+      }
+    }
+  },
+  "Liverpool_vs_Southampton": {
+    "home": "Liverpool",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.2,
+        "draw": 7.4,
+        "away_win": 1.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.3,
+        "draw": 8.2,
+        "away_win": 2.5
+      }
+    }
+  },
+  "Liverpool_vs_Tottenham": {
+    "home": "Liverpool",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.9,
+        "draw": 20.5,
+        "away_win": 21.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.1,
+        "draw": 17.0,
+        "away_win": 24.9
+      }
+    }
+  },
+  "Liverpool_vs_West Ham": {
+    "home": "Liverpool",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.1,
+        "draw": 12.3,
+        "away_win": 5.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 76.2,
+        "draw": 14.8,
+        "away_win": 9.0
+      }
+    }
+  },
+  "Liverpool_vs_Wolves": {
+    "home": "Liverpool",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 93.9,
+        "draw": 5.2,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 80.4,
+        "draw": 15.2,
+        "away_win": 4.4
+      }
+    }
+  },
+  "Manchester City_vs_Arsenal": {
+    "home": "Manchester City",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 24.3,
+        "draw": 31.1,
+        "away_win": 44.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 29.3,
+        "draw": 28.7,
+        "away_win": 42.0
+      }
+    }
+  },
+  "Manchester City_vs_Aston Villa": {
+    "home": "Manchester City",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.0,
+        "draw": 7.2,
+        "away_win": 3.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 80.6,
+        "draw": 15.6,
+        "away_win": 3.7
+      }
+    }
+  },
+  "Manchester City_vs_Bournemouth": {
+    "home": "Manchester City",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.0,
+        "draw": 10.8,
+        "away_win": 1.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 83.0,
+        "draw": 13.5,
+        "away_win": 3.5
+      }
+    }
+  },
+  "Manchester City_vs_Brentford": {
+    "home": "Manchester City",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.9,
+        "draw": 18.3,
+        "away_win": 1.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.7,
+        "draw": 18.3,
+        "away_win": 2.0
+      }
+    }
+  },
+  "Manchester City_vs_Brighton": {
+    "home": "Manchester City",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 93.6,
+        "draw": 5.5,
+        "away_win": 1.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.2,
+        "draw": 11.8,
+        "away_win": 2.0
+      }
+    }
+  },
+  "Manchester City_vs_Chelsea": {
+    "home": "Manchester City",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.8,
+        "draw": 23.4,
+        "away_win": 17.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 45.8,
+        "draw": 25.9,
+        "away_win": 28.4
+      }
+    }
+  },
+  "Manchester City_vs_Crystal Palace": {
+    "home": "Manchester City",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.8,
+        "draw": 10.3,
+        "away_win": 1.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.5,
+        "draw": 12.2,
+        "away_win": 2.4
+      }
+    }
+  },
+  "Manchester City_vs_Everton": {
+    "home": "Manchester City",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.1,
+        "draw": 9.6,
+        "away_win": 1.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.2,
+        "draw": 15.5,
+        "away_win": 2.3
+      }
+    }
+  },
+  "Manchester City_vs_Fulham": {
+    "home": "Manchester City",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 20.9,
+        "draw": 75.7,
+        "away_win": 3.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.8,
+        "draw": 33.6,
+        "away_win": 4.6
+      }
+    }
+  },
+  "Manchester City_vs_Ipswich Town": {
+    "home": "Manchester City",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.5,
+        "draw": 25.1,
+        "away_win": 2.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.1,
+        "draw": 31.9,
+        "away_win": 4.0
+      }
+    }
+  },
+  "Manchester City_vs_Leicester City": {
+    "home": "Manchester City",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 84.1,
+        "draw": 15.0,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.1,
+        "draw": 15.5,
+        "away_win": 2.4
+      }
+    }
+  },
+  "Manchester City_vs_Liverpool": {
+    "home": "Manchester City",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.5,
+        "draw": 34.7,
+        "away_win": 11.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 30.9,
+        "draw": 36.0,
+        "away_win": 33.1
+      }
+    }
+  },
+  "Manchester City_vs_Manchester United": {
+    "home": "Manchester City",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.7,
+        "draw": 30.4,
+        "away_win": 1.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.9,
+        "draw": 26.3,
+        "away_win": 14.8
+      }
+    }
+  },
+  "Manchester City_vs_Newcastle": {
+    "home": "Manchester City",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.3,
+        "draw": 7.9,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 83.6,
+        "draw": 12.8,
+        "away_win": 3.6
+      }
+    }
+  },
+  "Manchester City_vs_Nottingham Forest": {
+    "home": "Manchester City",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 93.4,
+        "draw": 5.9,
+        "away_win": 0.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.1,
+        "draw": 12.2,
+        "away_win": 1.8
+      }
+    }
+  },
+  "Manchester City_vs_Southampton": {
+    "home": "Manchester City",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 77.6,
+        "draw": 18.9,
+        "away_win": 3.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 77.0,
+        "draw": 18.8,
+        "away_win": 4.3
+      }
+    }
+  },
+  "Manchester City_vs_Tottenham": {
+    "home": "Manchester City",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 74.7,
+        "draw": 23.5,
+        "away_win": 1.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 66.4,
+        "draw": 19.3,
+        "away_win": 14.3
+      }
+    }
+  },
+  "Manchester City_vs_West Ham": {
+    "home": "Manchester City",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.5,
+        "draw": 8.0,
+        "away_win": 5.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.0,
+        "draw": 13.8,
+        "away_win": 7.2
+      }
+    }
+  },
+  "Manchester City_vs_Wolves": {
+    "home": "Manchester City",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 94.5,
+        "draw": 4.5,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.7,
+        "draw": 16.5,
+        "away_win": 3.8
+      }
+    }
+  },
+  "Manchester United_vs_Arsenal": {
+    "home": "Manchester United",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 7.0,
+        "draw": 39.2,
+        "away_win": 53.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 12.5,
+        "draw": 32.2,
+        "away_win": 55.3
+      }
+    }
+  },
+  "Manchester United_vs_Aston Villa": {
+    "home": "Manchester United",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.8,
+        "draw": 6.9,
+        "away_win": 10.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.1,
+        "draw": 24.7,
+        "away_win": 10.2
+      }
+    }
+  },
+  "Manchester United_vs_Bournemouth": {
+    "home": "Manchester United",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.5,
+        "draw": 9.9,
+        "away_win": 1.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.3,
+        "draw": 10.7,
+        "away_win": 4.0
+      }
+    }
+  },
+  "Manchester United_vs_Brentford": {
+    "home": "Manchester United",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.8,
+        "draw": 6.3,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.8,
+        "draw": 9.2,
+        "away_win": 4.0
+      }
+    }
+  },
+  "Manchester United_vs_Brighton": {
+    "home": "Manchester United",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 78.2,
+        "draw": 15.8,
+        "away_win": 6.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 71.2,
+        "draw": 21.3,
+        "away_win": 7.5
+      }
+    }
+  },
+  "Manchester United_vs_Chelsea": {
+    "home": "Manchester United",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 33.1,
+        "draw": 12.9,
+        "away_win": 54.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 30.4,
+        "draw": 24.3,
+        "away_win": 45.3
+      }
+    }
+  },
+  "Manchester United_vs_Crystal Palace": {
+    "home": "Manchester United",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 84.4,
+        "draw": 13.2,
+        "away_win": 2.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 81.7,
+        "draw": 12.6,
+        "away_win": 5.7
+      }
+    }
+  },
+  "Manchester United_vs_Everton": {
+    "home": "Manchester United",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.2,
+        "draw": 6.9,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.7,
+        "draw": 10.0,
+        "away_win": 4.4
+      }
+    }
+  },
+  "Manchester United_vs_Fulham": {
+    "home": "Manchester United",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 73.1,
+        "draw": 24.5,
+        "away_win": 2.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 78.2,
+        "draw": 15.4,
+        "away_win": 6.4
+      }
+    }
+  },
+  "Manchester United_vs_Ipswich Town": {
+    "home": "Manchester United",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.6,
+        "draw": 7.2,
+        "away_win": 1.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 78.2,
+        "draw": 17.0,
+        "away_win": 4.8
+      }
+    }
+  },
+  "Manchester United_vs_Leicester City": {
+    "home": "Manchester United",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.4,
+        "draw": 6.8,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.8,
+        "draw": 8.5,
+        "away_win": 3.7
+      }
+    }
+  },
+  "Manchester United_vs_Liverpool": {
+    "home": "Manchester United",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 37.1,
+        "draw": 32.5,
+        "away_win": 30.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 20.9,
+        "draw": 36.1,
+        "away_win": 43.0
+      }
+    }
+  },
+  "Manchester United_vs_Manchester City": {
+    "home": "Manchester United",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.5,
+        "draw": 31.8,
+        "away_win": 63.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.9,
+        "draw": 23.3,
+        "away_win": 70.8
+      }
+    }
+  },
+  "Manchester United_vs_Newcastle": {
+    "home": "Manchester United",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.1,
+        "draw": 9.2,
+        "away_win": 22.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.9,
+        "draw": 24.7,
+        "away_win": 13.4
+      }
+    }
+  },
+  "Manchester United_vs_Nottingham Forest": {
+    "home": "Manchester United",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 94.7,
+        "draw": 4.5,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.1,
+        "draw": 10.1,
+        "away_win": 3.8
+      }
+    }
+  },
+  "Manchester United_vs_Southampton": {
+    "home": "Manchester United",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.8,
+        "draw": 8.8,
+        "away_win": 1.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.1,
+        "draw": 10.0,
+        "away_win": 3.9
+      }
+    }
+  },
+  "Manchester United_vs_Tottenham": {
+    "home": "Manchester United",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.5,
+        "draw": 20.3,
+        "away_win": 21.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.9,
+        "draw": 23.3,
+        "away_win": 25.8
+      }
+    }
+  },
+  "Manchester United_vs_West Ham": {
+    "home": "Manchester United",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.8,
+        "draw": 23.2,
+        "away_win": 4.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.5,
+        "draw": 22.6,
+        "away_win": 12.8
+      }
+    }
+  },
+  "Manchester United_vs_Wolves": {
+    "home": "Manchester United",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 95.5,
+        "draw": 3.7,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 75.4,
+        "draw": 19.7,
+        "away_win": 4.9
+      }
+    }
+  },
+  "Newcastle_vs_Arsenal": {
+    "home": "Newcastle",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.5,
+        "draw": 34.7,
+        "away_win": 60.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 7.8,
+        "draw": 21.1,
+        "away_win": 71.1
+      }
+    }
+  },
+  "Newcastle_vs_Aston Villa": {
+    "home": "Newcastle",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 75.2,
+        "draw": 16.3,
+        "away_win": 8.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.0,
+        "draw": 22.2,
+        "away_win": 16.8
+      }
+    }
+  },
+  "Newcastle_vs_Bournemouth": {
+    "home": "Newcastle",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.8,
+        "draw": 33.1,
+        "away_win": 6.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.9,
+        "draw": 20.7,
+        "away_win": 10.3
+      }
+    }
+  },
+  "Newcastle_vs_Brentford": {
+    "home": "Newcastle",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.4,
+        "draw": 33.7,
+        "away_win": 7.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 66.9,
+        "draw": 20.1,
+        "away_win": 13.0
+      }
+    }
+  },
+  "Newcastle_vs_Brighton": {
+    "home": "Newcastle",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.6,
+        "draw": 25.5,
+        "away_win": 22.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 55.9,
+        "draw": 28.7,
+        "away_win": 15.4
+      }
+    }
+  },
+  "Newcastle_vs_Chelsea": {
+    "home": "Newcastle",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 13.9,
+        "draw": 30.8,
+        "away_win": 55.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 12.8,
+        "draw": 24.9,
+        "away_win": 62.3
+      }
+    }
+  },
+  "Newcastle_vs_Crystal Palace": {
+    "home": "Newcastle",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.4,
+        "draw": 27.0,
+        "away_win": 25.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.4,
+        "draw": 27.6,
+        "away_win": 14.9
+      }
+    }
+  },
+  "Newcastle_vs_Everton": {
+    "home": "Newcastle",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.0,
+        "draw": 34.2,
+        "away_win": 4.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 70.0,
+        "draw": 19.0,
+        "away_win": 11.1
+      }
+    }
+  },
+  "Newcastle_vs_Fulham": {
+    "home": "Newcastle",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 74.5,
+        "draw": 20.0,
+        "away_win": 5.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 70.1,
+        "draw": 15.5,
+        "away_win": 14.4
+      }
+    }
+  },
+  "Newcastle_vs_Ipswich Town": {
+    "home": "Newcastle",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.3,
+        "draw": 6.7,
+        "away_win": 1.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 77.2,
+        "draw": 14.6,
+        "away_win": 8.2
+      }
+    }
+  },
+  "Newcastle_vs_Leicester City": {
+    "home": "Newcastle",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.0,
+        "draw": 8.2,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.2,
+        "draw": 9.5,
+        "away_win": 5.3
+      }
+    }
+  },
+  "Newcastle_vs_Liverpool": {
+    "home": "Newcastle",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 12.8,
+        "draw": 47.0,
+        "away_win": 40.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 16.0,
+        "draw": 25.0,
+        "away_win": 59.0
+      }
+    }
+  },
+  "Newcastle_vs_Manchester City": {
+    "home": "Newcastle",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.1,
+        "draw": 24.5,
+        "away_win": 72.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.4,
+        "draw": 23.1,
+        "away_win": 71.5
+      }
+    }
+  },
+  "Newcastle_vs_Manchester United": {
+    "home": "Newcastle",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 36.8,
+        "draw": 49.1,
+        "away_win": 14.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 32.1,
+        "draw": 36.7,
+        "away_win": 31.2
+      }
+    }
+  },
+  "Newcastle_vs_Nottingham Forest": {
+    "home": "Newcastle",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 66.2,
+        "draw": 29.0,
+        "away_win": 4.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.8,
+        "draw": 19.6,
+        "away_win": 11.6
+      }
+    }
+  },
+  "Newcastle_vs_Southampton": {
+    "home": "Newcastle",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.2,
+        "draw": 7.4,
+        "away_win": 1.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 82.0,
+        "draw": 11.0,
+        "away_win": 7.0
+      }
+    }
+  },
+  "Newcastle_vs_Tottenham": {
+    "home": "Newcastle",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 25.7,
+        "draw": 31.3,
+        "away_win": 43.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 37.6,
+        "draw": 28.2,
+        "away_win": 34.2
+      }
+    }
+  },
+  "Newcastle_vs_West Ham": {
+    "home": "Newcastle",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 33.1,
+        "draw": 31.0,
+        "away_win": 35.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.3,
+        "draw": 25.6,
+        "away_win": 21.1
+      }
+    }
+  },
+  "Newcastle_vs_Wolves": {
+    "home": "Newcastle",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 62.8,
+        "draw": 28.1,
+        "away_win": 9.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.5,
+        "draw": 26.0,
+        "away_win": 12.5
+      }
+    }
+  },
+  "Nottingham Forest_vs_Arsenal": {
+    "home": "Nottingham Forest",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 0.7,
+        "draw": 2.3,
+        "away_win": 97.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.7,
+        "draw": 6.5,
+        "away_win": 91.9
+      }
+    }
+  },
+  "Nottingham Forest_vs_Aston Villa": {
+    "home": "Nottingham Forest",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 18.9,
+        "draw": 26.2,
+        "away_win": 54.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 29.0,
+        "draw": 25.5,
+        "away_win": 45.5
+      }
+    }
+  },
+  "Nottingham Forest_vs_Bournemouth": {
+    "home": "Nottingham Forest",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.9,
+        "draw": 19.9,
+        "away_win": 29.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 52.8,
+        "draw": 24.9,
+        "away_win": 22.3
+      }
+    }
+  },
+  "Nottingham Forest_vs_Brentford": {
+    "home": "Nottingham Forest",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 52.5,
+        "draw": 16.4,
+        "away_win": 31.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.5,
+        "draw": 21.9,
+        "away_win": 23.7
+      }
+    }
+  },
+  "Nottingham Forest_vs_Brighton": {
+    "home": "Nottingham Forest",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 28.8,
+        "draw": 16.8,
+        "away_win": 54.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 38.7,
+        "draw": 22.0,
+        "away_win": 39.3
+      }
+    }
+  },
+  "Nottingham Forest_vs_Chelsea": {
+    "home": "Nottingham Forest",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.2,
+        "draw": 11.5,
+        "away_win": 85.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.9,
+        "draw": 8.5,
+        "away_win": 85.6
+      }
+    }
+  },
+  "Nottingham Forest_vs_Crystal Palace": {
+    "home": "Nottingham Forest",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 31.6,
+        "draw": 23.2,
+        "away_win": 45.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.5,
+        "draw": 21.3,
+        "away_win": 27.2
+      }
+    }
+  },
+  "Nottingham Forest_vs_Everton": {
+    "home": "Nottingham Forest",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.7,
+        "draw": 28.6,
+        "away_win": 16.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.8,
+        "draw": 21.3,
+        "away_win": 18.9
+      }
+    }
+  },
+  "Nottingham Forest_vs_Fulham": {
+    "home": "Nottingham Forest",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.4,
+        "draw": 5.8,
+        "away_win": 39.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.3,
+        "draw": 15.3,
+        "away_win": 23.4
+      }
+    }
+  },
+  "Nottingham Forest_vs_Ipswich Town": {
+    "home": "Nottingham Forest",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 73.7,
+        "draw": 20.3,
+        "away_win": 6.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.6,
+        "draw": 18.6,
+        "away_win": 12.8
+      }
+    }
+  },
+  "Nottingham Forest_vs_Leicester City": {
+    "home": "Nottingham Forest",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 54.6,
+        "draw": 26.4,
+        "away_win": 19.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 63.1,
+        "draw": 18.8,
+        "away_win": 18.1
+      }
+    }
+  },
+  "Nottingham Forest_vs_Liverpool": {
+    "home": "Nottingham Forest",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.6,
+        "draw": 19.8,
+        "away_win": 78.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.2,
+        "draw": 9.1,
+        "away_win": 86.7
+      }
+    }
+  },
+  "Nottingham Forest_vs_Manchester City": {
+    "home": "Nottingham Forest",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 0.8,
+        "draw": 6.5,
+        "away_win": 92.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.5,
+        "draw": 16.2,
+        "away_win": 82.3
+      }
+    }
+  },
+  "Nottingham Forest_vs_Manchester United": {
+    "home": "Nottingham Forest",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.3,
+        "draw": 21.1,
+        "away_win": 73.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.7,
+        "draw": 18.2,
+        "away_win": 71.0
+      }
+    }
+  },
+  "Nottingham Forest_vs_Newcastle": {
+    "home": "Nottingham Forest",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 29.2,
+        "draw": 17.4,
+        "away_win": 53.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 19.8,
+        "draw": 19.9,
+        "away_win": 60.3
+      }
+    }
+  },
+  "Nottingham Forest_vs_Southampton": {
+    "home": "Nottingham Forest",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.6,
+        "draw": 28.1,
+        "away_win": 11.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.5,
+        "draw": 19.4,
+        "away_win": 15.1
+      }
+    }
+  },
+  "Nottingham Forest_vs_Tottenham": {
+    "home": "Nottingham Forest",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.6,
+        "draw": 19.8,
+        "away_win": 77.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 12.5,
+        "draw": 14.6,
+        "away_win": 72.8
+      }
+    }
+  },
+  "Nottingham Forest_vs_West Ham": {
+    "home": "Nottingham Forest",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 15.1,
+        "draw": 28.0,
+        "away_win": 56.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 31.1,
+        "draw": 22.6,
+        "away_win": 46.4
+      }
+    }
+  },
+  "Nottingham Forest_vs_Wolves": {
+    "home": "Nottingham Forest",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 49.3,
+        "draw": 14.5,
+        "away_win": 36.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.7,
+        "draw": 20.1,
+        "away_win": 21.2
+      }
+    }
+  },
+  "Southampton_vs_Arsenal": {
+    "home": "Southampton",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 0.8,
+        "draw": 1.8,
+        "away_win": 97.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.4,
+        "draw": 8.3,
+        "away_win": 90.3
+      }
+    }
+  },
+  "Southampton_vs_Aston Villa": {
+    "home": "Southampton",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 16.7,
+        "draw": 11.5,
+        "away_win": 71.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 33.4,
+        "draw": 18.5,
+        "away_win": 48.1
+      }
+    }
+  },
+  "Southampton_vs_Bournemouth": {
+    "home": "Southampton",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 42.8,
+        "draw": 10.7,
+        "away_win": 46.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 40.5,
+        "draw": 24.2,
+        "away_win": 35.4
+      }
+    }
+  },
+  "Southampton_vs_Brentford": {
+    "home": "Southampton",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 32.9,
+        "draw": 10.2,
+        "away_win": 56.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 43.9,
+        "draw": 22.2,
+        "away_win": 33.9
+      }
+    }
+  },
+  "Southampton_vs_Brighton": {
+    "home": "Southampton",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 19.4,
+        "draw": 9.1,
+        "away_win": 71.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 26.6,
+        "draw": 15.5,
+        "away_win": 57.9
+      }
+    }
+  },
+  "Southampton_vs_Chelsea": {
+    "home": "Southampton",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.7,
+        "draw": 2.2,
+        "away_win": 94.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.5,
+        "draw": 8.0,
+        "away_win": 86.4
+      }
+    }
+  },
+  "Southampton_vs_Crystal Palace": {
+    "home": "Southampton",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.0,
+        "draw": 9.5,
+        "away_win": 80.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 32.1,
+        "draw": 18.3,
+        "away_win": 49.6
+      }
+    }
+  },
+  "Southampton_vs_Everton": {
+    "home": "Southampton",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.5,
+        "draw": 13.0,
+        "away_win": 35.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 44.5,
+        "draw": 20.8,
+        "away_win": 34.7
+      }
+    }
+  },
+  "Southampton_vs_Fulham": {
+    "home": "Southampton",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 75.9,
+        "draw": 3.3,
+        "away_win": 20.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 43.8,
+        "draw": 20.2,
+        "away_win": 36.0
+      }
+    }
+  },
+  "Southampton_vs_Ipswich Town": {
+    "home": "Southampton",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.7,
+        "draw": 7.1,
+        "away_win": 13.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.4,
+        "draw": 21.8,
+        "away_win": 17.8
+      }
+    }
+  },
+  "Southampton_vs_Leicester City": {
+    "home": "Southampton",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 73.9,
+        "draw": 10.6,
+        "away_win": 15.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.9,
+        "draw": 19.4,
+        "away_win": 26.7
+      }
+    }
+  },
+  "Southampton_vs_Liverpool": {
+    "home": "Southampton",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.4,
+        "draw": 1.6,
+        "away_win": 97.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.1,
+        "draw": 6.1,
+        "away_win": 90.9
+      }
+    }
+  },
+  "Southampton_vs_Manchester City": {
+    "home": "Southampton",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.5,
+        "draw": 5.5,
+        "away_win": 93.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.1,
+        "draw": 16.0,
+        "away_win": 82.0
+      }
+    }
+  },
+  "Southampton_vs_Manchester United": {
+    "home": "Southampton",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.8,
+        "draw": 1.0,
+        "away_win": 94.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.9,
+        "draw": 10.8,
+        "away_win": 78.3
+      }
+    }
+  },
+  "Southampton_vs_Newcastle": {
+    "home": "Southampton",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 25.5,
+        "draw": 1.9,
+        "away_win": 72.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 20.7,
+        "draw": 12.9,
+        "away_win": 66.3
+      }
+    }
+  },
+  "Southampton_vs_Nottingham Forest": {
+    "home": "Southampton",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.3,
+        "draw": 7.9,
+        "away_win": 45.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 40.4,
+        "draw": 20.5,
+        "away_win": 39.1
+      }
+    }
+  },
+  "Southampton_vs_Tottenham": {
+    "home": "Southampton",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.1,
+        "draw": 1.5,
+        "away_win": 96.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 13.5,
+        "draw": 11.1,
+        "away_win": 75.3
+      }
+    }
+  },
+  "Southampton_vs_West Ham": {
+    "home": "Southampton",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.8,
+        "draw": 10.0,
+        "away_win": 84.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 20.8,
+        "draw": 20.5,
+        "away_win": 58.7
+      }
+    }
+  },
+  "Southampton_vs_Wolves": {
+    "home": "Southampton",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 23.2,
+        "draw": 8.0,
+        "away_win": 68.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 33.7,
+        "draw": 20.4,
+        "away_win": 45.9
+      }
+    }
+  },
+  "Tottenham_vs_Arsenal": {
+    "home": "Tottenham",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.0,
+        "draw": 20.0,
+        "away_win": 77.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 8.7,
+        "draw": 23.2,
+        "away_win": 68.1
+      }
+    }
+  },
+  "Tottenham_vs_Aston Villa": {
+    "home": "Tottenham",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 79.4,
+        "draw": 10.9,
+        "away_win": 9.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.3,
+        "draw": 22.4,
+        "away_win": 10.3
+      }
+    }
+  },
+  "Tottenham_vs_Bournemouth": {
+    "home": "Tottenham",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 84.3,
+        "draw": 14.0,
+        "away_win": 1.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 86.1,
+        "draw": 10.8,
+        "away_win": 3.1
+      }
+    }
+  },
+  "Tottenham_vs_Brentford": {
+    "home": "Tottenham",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 76.7,
+        "draw": 21.5,
+        "away_win": 1.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.4,
+        "draw": 10.8,
+        "away_win": 3.8
+      }
+    }
+  },
+  "Tottenham_vs_Brighton": {
+    "home": "Tottenham",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.1,
+        "draw": 16.1,
+        "away_win": 22.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 63.2,
+        "draw": 26.3,
+        "away_win": 10.6
+      }
+    }
+  },
+  "Tottenham_vs_Chelsea": {
+    "home": "Tottenham",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 41.6,
+        "draw": 17.8,
+        "away_win": 40.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 25.6,
+        "draw": 28.4,
+        "away_win": 46.0
+      }
+    }
+  },
+  "Tottenham_vs_Crystal Palace": {
+    "home": "Tottenham",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.4,
+        "draw": 24.8,
+        "away_win": 2.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 74.6,
+        "draw": 18.1,
+        "away_win": 7.3
+      }
+    }
+  },
+  "Tottenham_vs_Everton": {
+    "home": "Tottenham",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 90.4,
+        "draw": 8.7,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.5,
+        "draw": 8.6,
+        "away_win": 2.9
+      }
+    }
+  },
+  "Tottenham_vs_Fulham": {
+    "home": "Tottenham",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 91.1,
+        "draw": 8.0,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.7,
+        "draw": 9.1,
+        "away_win": 3.2
+      }
+    }
+  },
+  "Tottenham_vs_Ipswich Town": {
+    "home": "Tottenham",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.9,
+        "draw": 9.0,
+        "away_win": 1.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 80.7,
+        "draw": 16.2,
+        "away_win": 3.0
+      }
+    }
+  },
+  "Tottenham_vs_Leicester City": {
+    "home": "Tottenham",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 88.8,
+        "draw": 10.4,
+        "away_win": 0.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.8,
+        "draw": 8.1,
+        "away_win": 2.0
+      }
+    }
+  },
+  "Tottenham_vs_Liverpool": {
+    "home": "Tottenham",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.4,
+        "draw": 24.9,
+        "away_win": 24.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 29.0,
+        "draw": 30.3,
+        "away_win": 40.7
+      }
+    }
+  },
+  "Tottenham_vs_Manchester City": {
+    "home": "Tottenham",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.8,
+        "draw": 19.4,
+        "away_win": 77.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.4,
+        "draw": 21.7,
+        "away_win": 71.9
+      }
+    }
+  },
+  "Tottenham_vs_Manchester United": {
+    "home": "Tottenham",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 49.1,
+        "draw": 37.7,
+        "away_win": 13.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.4,
+        "draw": 33.3,
+        "away_win": 20.3
+      }
+    }
+  },
+  "Tottenham_vs_Newcastle": {
+    "home": "Tottenham",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.4,
+        "draw": 12.2,
+        "away_win": 20.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.5,
+        "draw": 23.8,
+        "away_win": 15.6
+      }
+    }
+  },
+  "Tottenham_vs_Nottingham Forest": {
+    "home": "Tottenham",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.8,
+        "draw": 6.4,
+        "away_win": 0.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 89.2,
+        "draw": 8.5,
+        "away_win": 2.3
+      }
+    }
+  },
+  "Tottenham_vs_Southampton": {
+    "home": "Tottenham",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 83.9,
+        "draw": 14.2,
+        "away_win": 2.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 87.6,
+        "draw": 9.2,
+        "away_win": 3.1
+      }
+    }
+  },
+  "Tottenham_vs_West Ham": {
+    "home": "Tottenham",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.2,
+        "draw": 25.0,
+        "away_win": 10.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.7,
+        "draw": 20.7,
+        "away_win": 13.6
+      }
+    }
+  },
+  "Tottenham_vs_Wolves": {
+    "home": "Tottenham",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 92.3,
+        "draw": 6.4,
+        "away_win": 1.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 76.7,
+        "draw": 17.7,
+        "away_win": 5.6
+      }
+    }
+  },
+  "West Ham_vs_Arsenal": {
+    "home": "West Ham",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 1.7,
+        "draw": 21.9,
+        "away_win": 76.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 4.0,
+        "draw": 22.7,
+        "away_win": 73.3
+      }
+    }
+  },
+  "West Ham_vs_Aston Villa": {
+    "home": "West Ham",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.4,
+        "draw": 21.0,
+        "away_win": 19.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.0,
+        "draw": 24.0,
+        "away_win": 24.9
+      }
+    }
+  },
+  "West Ham_vs_Bournemouth": {
+    "home": "West Ham",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 62.9,
+        "draw": 24.8,
+        "away_win": 12.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.4,
+        "draw": 22.4,
+        "away_win": 12.2
+      }
+    }
+  },
+  "West Ham_vs_Brentford": {
+    "home": "West Ham",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 52.9,
+        "draw": 32.1,
+        "away_win": 15.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.9,
+        "draw": 25.3,
+        "away_win": 15.8
+      }
+    }
+  },
+  "West Ham_vs_Brighton": {
+    "home": "West Ham",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.1,
+        "draw": 29.3,
+        "away_win": 19.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.0,
+        "draw": 28.0,
+        "away_win": 21.1
+      }
+    }
+  },
+  "West Ham_vs_Chelsea": {
+    "home": "West Ham",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 11.3,
+        "draw": 32.9,
+        "away_win": 55.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 9.9,
+        "draw": 28.6,
+        "away_win": 61.5
+      }
+    }
+  },
+  "West Ham_vs_Crystal Palace": {
+    "home": "West Ham",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 42.3,
+        "draw": 37.4,
+        "away_win": 20.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 61.9,
+        "draw": 22.5,
+        "away_win": 15.6
+      }
+    }
+  },
+  "West Ham_vs_Everton": {
+    "home": "West Ham",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.6,
+        "draw": 32.5,
+        "away_win": 13.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 62.2,
+        "draw": 23.7,
+        "away_win": 14.0
+      }
+    }
+  },
+  "West Ham_vs_Fulham": {
+    "home": "West Ham",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.2,
+        "draw": 22.5,
+        "away_win": 26.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 60.2,
+        "draw": 23.1,
+        "away_win": 16.7
+      }
+    }
+  },
+  "West Ham_vs_Ipswich Town": {
+    "home": "West Ham",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 85.6,
+        "draw": 11.5,
+        "away_win": 2.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 72.5,
+        "draw": 19.1,
+        "away_win": 8.4
+      }
+    }
+  },
+  "West Ham_vs_Leicester City": {
+    "home": "West Ham",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 57.5,
+        "draw": 38.2,
+        "away_win": 4.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 67.2,
+        "draw": 22.9,
+        "away_win": 9.9
+      }
+    }
+  },
+  "West Ham_vs_Liverpool": {
+    "home": "West Ham",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 6.5,
+        "draw": 45.7,
+        "away_win": 47.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 9.6,
+        "draw": 32.5,
+        "away_win": 57.9
+      }
+    }
+  },
+  "West Ham_vs_Manchester City": {
+    "home": "West Ham",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.3,
+        "draw": 29.0,
+        "away_win": 68.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.2,
+        "draw": 23.9,
+        "away_win": 72.9
+      }
+    }
+  },
+  "West Ham_vs_Manchester United": {
+    "home": "West Ham",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 26.2,
+        "draw": 39.3,
+        "away_win": 34.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 14.7,
+        "draw": 30.8,
+        "away_win": 54.4
+      }
+    }
+  },
+  "West Ham_vs_Newcastle": {
+    "home": "West Ham",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 58.4,
+        "draw": 21.6,
+        "away_win": 20.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 45.0,
+        "draw": 24.1,
+        "away_win": 30.9
+      }
+    }
+  },
+  "West Ham_vs_Nottingham Forest": {
+    "home": "West Ham",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.2,
+        "draw": 20.8,
+        "away_win": 11.0
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.4,
+        "draw": 22.1,
+        "away_win": 12.5
+      }
+    }
+  },
+  "West Ham_vs_Southampton": {
+    "home": "West Ham",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 68.6,
+        "draw": 28.2,
+        "away_win": 3.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 69.2,
+        "draw": 21.9,
+        "away_win": 8.9
+      }
+    }
+  },
+  "West Ham_vs_Tottenham": {
+    "home": "West Ham",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 8.8,
+        "draw": 33.8,
+        "away_win": 57.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 14.1,
+        "draw": 28.6,
+        "away_win": 57.3
+      }
+    }
+  },
+  "West Ham_vs_Wolves": {
+    "home": "West Ham",
+    "away": "Wolves",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.1,
+        "draw": 26.7,
+        "away_win": 20.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 64.9,
+        "draw": 23.0,
+        "away_win": 12.1
+      }
+    }
+  },
+  "Wolves_vs_Arsenal": {
+    "home": "Wolves",
+    "away": "Arsenal",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 2.1,
+        "draw": 2.4,
+        "away_win": 95.5
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.0,
+        "draw": 8.0,
+        "away_win": 89.1
+      }
+    }
+  },
+  "Wolves_vs_Aston Villa": {
+    "home": "Wolves",
+    "away": "Aston Villa",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 26.6,
+        "draw": 35.2,
+        "away_win": 38.2
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 29.7,
+        "draw": 31.7,
+        "away_win": 38.5
+      }
+    }
+  },
+  "Wolves_vs_Bournemouth": {
+    "home": "Wolves",
+    "away": "Bournemouth",
+    "xgboost": {
+      "outcome": "Draw (D)",
+      "result": "D",
+      "probabilities": {
+        "home_win": 36.8,
+        "draw": 37.9,
+        "away_win": 25.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 44.2,
+        "draw": 27.9,
+        "away_win": 27.8
+      }
+    }
+  },
+  "Wolves_vs_Brentford": {
+    "home": "Wolves",
+    "away": "Brentford",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 51.3,
+        "draw": 11.1,
+        "away_win": 37.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.4,
+        "draw": 26.4,
+        "away_win": 26.2
+      }
+    }
+  },
+  "Wolves_vs_Brighton": {
+    "home": "Wolves",
+    "away": "Brighton",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 26.1,
+        "draw": 32.0,
+        "away_win": 41.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 35.7,
+        "draw": 26.1,
+        "away_win": 38.2
+      }
+    }
+  },
+  "Wolves_vs_Chelsea": {
+    "home": "Wolves",
+    "away": "Chelsea",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 15.0,
+        "draw": 6.7,
+        "away_win": 78.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 7.0,
+        "draw": 7.7,
+        "away_win": 85.3
+      }
+    }
+  },
+  "Wolves_vs_Crystal Palace": {
+    "home": "Wolves",
+    "away": "Crystal Palace",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 27.5,
+        "draw": 33.4,
+        "away_win": 39.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 44.3,
+        "draw": 25.8,
+        "away_win": 29.9
+      }
+    }
+  },
+  "Wolves_vs_Everton": {
+    "home": "Wolves",
+    "away": "Everton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 49.0,
+        "draw": 18.7,
+        "away_win": 32.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 43.1,
+        "draw": 29.0,
+        "away_win": 27.9
+      }
+    }
+  },
+  "Wolves_vs_Fulham": {
+    "home": "Wolves",
+    "away": "Fulham",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 52.7,
+        "draw": 9.4,
+        "away_win": 37.8
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 50.4,
+        "draw": 22.3,
+        "away_win": 27.3
+      }
+    }
+  },
+  "Wolves_vs_Ipswich Town": {
+    "home": "Wolves",
+    "away": "Ipswich Town",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 62.1,
+        "draw": 33.8,
+        "away_win": 4.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 66.5,
+        "draw": 20.1,
+        "away_win": 13.4
+      }
+    }
+  },
+  "Wolves_vs_Leicester City": {
+    "home": "Wolves",
+    "away": "Leicester City",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 65.8,
+        "draw": 10.6,
+        "away_win": 23.6
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 53.8,
+        "draw": 25.1,
+        "away_win": 21.1
+      }
+    }
+  },
+  "Wolves_vs_Liverpool": {
+    "home": "Wolves",
+    "away": "Liverpool",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 8.5,
+        "draw": 5.6,
+        "away_win": 85.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 5.0,
+        "draw": 8.9,
+        "away_win": 86.1
+      }
+    }
+  },
+  "Wolves_vs_Manchester City": {
+    "home": "Wolves",
+    "away": "Manchester City",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.6,
+        "draw": 6.7,
+        "away_win": 89.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 3.1,
+        "draw": 17.3,
+        "away_win": 79.6
+      }
+    }
+  },
+  "Wolves_vs_Manchester United": {
+    "home": "Wolves",
+    "away": "Manchester United",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 31.9,
+        "draw": 29.8,
+        "away_win": 38.3
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 13.3,
+        "draw": 14.8,
+        "away_win": 72.0
+      }
+    }
+  },
+  "Wolves_vs_Newcastle": {
+    "home": "Wolves",
+    "away": "Newcastle",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 47.9,
+        "draw": 24.2,
+        "away_win": 27.9
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 22.2,
+        "draw": 24.1,
+        "away_win": 53.7
+      }
+    }
+  },
+  "Wolves_vs_Nottingham Forest": {
+    "home": "Wolves",
+    "away": "Nottingham Forest",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 45.8,
+        "draw": 30.1,
+        "away_win": 24.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 46.5,
+        "draw": 29.2,
+        "away_win": 24.3
+      }
+    }
+  },
+  "Wolves_vs_Southampton": {
+    "home": "Wolves",
+    "away": "Southampton",
+    "xgboost": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 44.8,
+        "draw": 27.1,
+        "away_win": 28.1
+      }
+    },
+    "random_forest": {
+      "outcome": "Home Win (H)",
+      "result": "H",
+      "probabilities": {
+        "home_win": 59.0,
+        "draw": 23.2,
+        "away_win": 17.8
+      }
+    }
+  },
+  "Wolves_vs_Tottenham": {
+    "home": "Wolves",
+    "away": "Tottenham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 8.6,
+        "draw": 32.7,
+        "away_win": 58.7
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 11.1,
+        "draw": 17.3,
+        "away_win": 71.5
+      }
+    }
+  },
+  "Wolves_vs_West Ham": {
+    "home": "Wolves",
+    "away": "West Ham",
+    "xgboost": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 10.4,
+        "draw": 21.2,
+        "away_win": 68.4
+      }
+    },
+    "random_forest": {
+      "outcome": "Away Win (A)",
+      "result": "A",
+      "probabilities": {
+        "home_win": 30.7,
+        "draw": 21.5,
+        "away_win": 47.9
+      }
+    }
+  }
+}

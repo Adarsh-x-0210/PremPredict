@@ -1,0 +1,222 @@
+{
+  "Arsenal": {
+    "team": "Arsenal",
+    "squad_value_m": 1149.5,
+    "rating": 91.4,
+    "form_points_last_5": 13,
+    "goals_scored_avg": 3.6,
+    "goals_conceded_avg": 0.8,
+    "shots_avg": 18.6,
+    "sot_avg": 7.6,
+    "possession_avg": 57.2
+  },
+  "Aston Villa": {
+    "team": "Aston Villa",
+    "squad_value_m": 591.5,
+    "rating": 72.9,
+    "form_points_last_5": 1,
+    "goals_scored_avg": 0.6,
+    "goals_conceded_avg": 1.4,
+    "shots_avg": 10.2,
+    "sot_avg": 3.8,
+    "possession_avg": 50.0
+  },
+  "Bournemouth": {
+    "team": "Bournemouth",
+    "squad_value_m": 365.5,
+    "rating": 65.5,
+    "form_points_last_5": 7,
+    "goals_scored_avg": 1.2,
+    "goals_conceded_avg": 1.4,
+    "shots_avg": 8.4,
+    "sot_avg": 1.8,
+    "possession_avg": 45.9
+  },
+  "Brentford": {
+    "team": "Brentford",
+    "squad_value_m": 390.5,
+    "rating": 66.3,
+    "form_points_last_5": 4,
+    "goals_scored_avg": 1.2,
+    "goals_conceded_avg": 2.6,
+    "shots_avg": 9.8,
+    "sot_avg": 3.2,
+    "possession_avg": 46.2
+  },
+  "Brighton": {
+    "team": "Brighton",
+    "squad_value_m": 500.0,
+    "rating": 69.9,
+    "form_points_last_5": 8,
+    "goals_scored_avg": 1.8,
+    "goals_conceded_avg": 1.4,
+    "shots_avg": 13.2,
+    "sot_avg": 4.0,
+    "possession_avg": 49.6
+  },
+  "Chelsea": {
+    "team": "Chelsea",
+    "squad_value_m": 923.0,
+    "rating": 83.9,
+    "form_points_last_5": 10,
+    "goals_scored_avg": 1.4,
+    "goals_conceded_avg": 0.6,
+    "shots_avg": 15.4,
+    "sot_avg": 8.0,
+    "possession_avg": 53.8
+  },
+  "Crystal Palace": {
+    "team": "Crystal Palace",
+    "squad_value_m": 420.0,
+    "rating": 67.3,
+    "form_points_last_5": 7,
+    "goals_scored_avg": 1.6,
+    "goals_conceded_avg": 2.0,
+    "shots_avg": 10.2,
+    "sot_avg": 3.0,
+    "possession_avg": 49.1
+  },
+  "Everton": {
+    "team": "Everton",
+    "squad_value_m": 349.6,
+    "rating": 64.9,
+    "form_points_last_5": 5,
+    "goals_scored_avg": 1.2,
+    "goals_conceded_avg": 2.4,
+    "shots_avg": 8.8,
+    "sot_avg": 2.4,
+    "possession_avg": 46.8
+  },
+  "Fulham": {
+    "team": "Fulham",
+    "squad_value_m": 335.2,
+    "rating": 64.5,
+    "form_points_last_5": 1,
+    "goals_scored_avg": 0.6,
+    "goals_conceded_avg": 3.2,
+    "shots_avg": 12.0,
+    "sot_avg": 2.6,
+    "possession_avg": 47.3
+  },
+  "Ipswich Town": {
+    "team": "Ipswich Town",
+    "squad_value_m": 206.0,
+    "rating": 60.2,
+    "form_points_last_5": 6,
+    "goals_scored_avg": 1.6,
+    "goals_conceded_avg": 2.6,
+    "shots_avg": 5.8,
+    "sot_avg": 2.6,
+    "possession_avg": 44.7
+  },
+  "Leicester City": {
+    "team": "Leicester City",
+    "squad_value_m": 264.5,
+    "rating": 62.1,
+    "form_points_last_5": 4,
+    "goals_scored_avg": 0.4,
+    "goals_conceded_avg": 1.6,
+    "shots_avg": 9.0,
+    "sot_avg": 2.0,
+    "possession_avg": 43.8
+  },
+  "Liverpool": {
+    "team": "Liverpool",
+    "squad_value_m": 923.0,
+    "rating": 83.9,
+    "form_points_last_5": 11,
+    "goals_scored_avg": 2.8,
+    "goals_conceded_avg": 0.4,
+    "shots_avg": 16.4,
+    "sot_avg": 7.4,
+    "possession_avg": 56.8
+  },
+  "Manchester City": {
+    "team": "Manchester City",
+    "squad_value_m": 1253.0,
+    "rating": 94.8,
+    "form_points_last_5": 15,
+    "goals_scored_avg": 3.2,
+    "goals_conceded_avg": 0.6,
+    "shots_avg": 20.2,
+    "sot_avg": 10.0,
+    "possession_avg": 57.2
+  },
+  "Manchester United": {
+    "team": "Manchester United",
+    "squad_value_m": 822.0,
+    "rating": 80.5,
+    "form_points_last_5": 13,
+    "goals_scored_avg": 3.0,
+    "goals_conceded_avg": 1.2,
+    "shots_avg": 15.8,
+    "sot_avg": 5.4,
+    "possession_avg": 51.3
+  },
+  "Newcastle": {
+    "team": "Newcastle",
+    "squad_value_m": 626.0,
+    "rating": 74.1,
+    "form_points_last_5": 9,
+    "goals_scored_avg": 2.0,
+    "goals_conceded_avg": 1.2,
+    "shots_avg": 11.6,
+    "sot_avg": 4.4,
+    "possession_avg": 51.0
+  },
+  "Nottingham Forest": {
+    "team": "Nottingham Forest",
+    "squad_value_m": 370.5,
+    "rating": 65.6,
+    "form_points_last_5": 6,
+    "goals_scored_avg": 2.0,
+    "goals_conceded_avg": 2.2,
+    "shots_avg": 9.4,
+    "sot_avg": 2.2,
+    "possession_avg": 48.8
+  },
+  "Southampton": {
+    "team": "Southampton",
+    "squad_value_m": 247.0,
+    "rating": 61.6,
+    "form_points_last_5": 5,
+    "goals_scored_avg": 1.4,
+    "goals_conceded_avg": 1.6,
+    "shots_avg": 7.0,
+    "sot_avg": 2.2,
+    "possession_avg": 43.9
+  },
+  "Tottenham": {
+    "team": "Tottenham",
+    "squad_value_m": 747.2,
+    "rating": 78.1,
+    "form_points_last_5": 9,
+    "goals_scored_avg": 2.4,
+    "goals_conceded_avg": 1.4,
+    "shots_avg": 15.6,
+    "sot_avg": 5.2,
+    "possession_avg": 56.3
+  },
+  "West Ham": {
+    "team": "West Ham",
+    "squad_value_m": 476.8,
+    "rating": 69.1,
+    "form_points_last_5": 5,
+    "goals_scored_avg": 0.8,
+    "goals_conceded_avg": 1.0,
+    "shots_avg": 11.8,
+    "sot_avg": 5.4,
+    "possession_avg": 52.9
+  },
+  "Wolves": {
+    "team": "Wolves",
+    "squad_value_m": 346.0,
+    "rating": 64.8,
+    "form_points_last_5": 10,
+    "goals_scored_avg": 1.6,
+    "goals_conceded_avg": 1.6,
+    "shots_avg": 11.0,
+    "sot_avg": 4.6,
+    "possession_avg": 50.8
+  }
+}
