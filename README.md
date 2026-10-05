@@ -5,13 +5,14 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-15B9A8?style=for-the-badge&logo=xgboost&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
-**An intelligent, dual-engine Premier League analytics platform powering role-specific transfer valuation and calibrated match outcome forecasting.**
+**An intelligent, multi-engine Premier League analytics platform powering role-specific transfer valuation, calibrated match outcome forecasting, and AI player scouting style similarity.**
 
-[Features](#-key-features) • [Quickstart](#-quickstart) • [Machine Learning Architecture](#-machine-learning-architecture) • [Project Structure](#-project-structure) • [Web Application](#-web-application) • [License](#-license)
+[Features](#-key-features) • [Quickstart](#-quickstart) • [Scouting Engine](#-player-scouting--similarity-engine) • [Machine Learning Architecture](#-machine-learning-architecture) • [Project Structure](#-project-structure) • [Web Application](#-web-application) • [License](#-license)
 
 </div>
 
@@ -19,7 +20,7 @@
 
 ## 🌟 Key Features
 
-PremPredict combines two distinct machine learning systems under a single unified, responsive interface:
+PremPredict combines three interconnected machine learning systems:
 
 ### 1. 🎯 Position-Specific Player Transfer Value Predictor
 - **441 Premier League Players**: Comprehensive dataset across all 20 Premier League clubs.
@@ -38,12 +39,18 @@ PremPredict combines two distinct machine learning systems under a single unifie
 ### 2. 🔮 Match Outcome Predictor (XGBoost + Random Forest)
 - **760 Historical Premier League Fixtures**: Rigorously compiled across 2 complete Premier League seasons.
 - **Engineered Contextual Features**:
-  - **Squad Market Valuation Difference & Ratio**: Captures financial gravity and elite player depth (eliminating naive home-advantage bias so top sides realistically win away against relegation contenders).
+  - **Squad Market Valuation Difference & Ratio**: Captures financial gravity and elite player depth (eliminating naive home-advantage bias so top sides realistically win away against bottom clubs).
   - **Rolling Form**: Exponentially weighted points from last 5 fixtures.
-  - **Attacking Threat**: Rolling shots on target per match.
-  - **Game Control**: Rolling average possession percentage.
+  - **Attacking Threat & Game Control**: Rolling shots on target and average possession percentage.
   - **Calibrated Home Ground Advantage**: Evaluated relative to opponent strength.
 - **Three-Way Match Probabilities**: Calibrated Win %, Draw %, and Away Win % forecasts with head-to-head stat comparisons.
+
+### 3. 🧭 AI Player Scouting & Style Similarity Engine (Streamlit + Scikit-Learn)
+- **Multi-Vector Player Matching**: Uses **Cosine Similarity** across 12 standardized tactical metrics (goals, assists, chances created, dribbles, tackles, duels, recoveries, passing, saves).
+- **Find Statistical Twins**: Select any Premier League star (e.g., *Bukayo Saka*) and discover their closest stylistic counterparts (e.g., *Matheus Cunha, Phil Foden, Mohamed Salah*).
+- **K-Means Tactical Archetype Clustering**: Unsupervised clustering ($k=6$) automatically segments players into playing style archetypes (*Creative Winger / Attacking Spark*, *Goal Poacher / Lethal Finisher*, *Playmaker / Deep Midfield Engine*, *Defensive Stopper / Ball Winner*, *Goalkeeper / Shot Stopper*, *Box-to-Box / Balanced Operator*).
+- **2D Tactical Style Space (PCA)**: Projects multidimensional player vectors onto orthogonal 2D principal components (Attacking Threat vs Defensive Solidity).
+- **Interactive Radar Comparison Charts**: Built with Matplotlib for head-to-head tactical profile comparisons.
 
 ---
 
@@ -51,13 +58,15 @@ PremPredict combines two distinct machine learning systems under a single unifie
 
 ```
 PremPredict/
-├── app.py                      # Lightweight Python HTTP server for the web interface
-├── index.html                  # Full-featured single-page web app (Obsidian Black & Electric Blue)
+├── app.py                      # Lightweight Python HTTP server for unified web interface
+├── streamlit_app.py            # Interactive Streamlit scouting & similarity dashboard
+├── index.html                  # Full-featured 3-in-1 web app (Obsidian Black & Electric Blue)
+├── generate_web_ui.py          # Unified UI compiler and artifact generator
 ├── main.py                     # Player valuation ML pipeline (training, evaluation, metrics)
 ├── main_matches.py             # Match outcome ML pipeline (XGBoost/Random Forest training)
 ├── interactive_cli.py          # Interactive terminal CLI for player valuation
 ├── visualize.py                # Visual diagnostics generator (Matplotlib)
-├── requirements.txt            # Python dependencies
+├── requirements.txt            # Python dependencies (includes Streamlit & XGBoost)
 ├── LICENSE                     # MIT License
 ├── .gitignore                  # Git ignore rules
 │
@@ -66,12 +75,15 @@ PremPredict/
 │   ├── players.json            # Structured player records for web application
 │   ├── pl_matches_dataset.csv  # 760 historical match rows with rolling metrics & squad valuations
 │   ├── team_stats.json         # Team profiles, squad market values, and rolling averages
-│   └── match_predictions.json  # Precomputed fixture probabilities for all 380 matchups
+│   ├── match_predictions.json  # Precomputed fixture probabilities for all 380 matchups
+│   ├── scouting_similarity.json# Precomputed similarity matches for all 441 players
+│   └── player_styles.json      # Tactical style cluster mapping for all players
 │
 ├── model/
 │   ├── __init__.py
 │   ├── predictor.py            # Role-specific Linear Regression engine
-│   └── match_predictor.py      # Match Outcome Classifier (XGBoost / RandomForest)
+│   ├── match_predictor.py      # Match Outcome Classifier (XGBoost / RandomForest)
+│   └── scouting_engine.py      # Cosine similarity, K-Means clustering & PCA engine
 │
 └── plots/                      # Diagnostic Matplotlib charts
     ├── actual_vs_predicted.png
@@ -86,7 +98,7 @@ PremPredict/
 ### 1. Clone & Set Up Environment
 
 ```bash
-git clone https://github.com/your-username/PremPredict.git
+git clone https://github.com/Adarsh-x-0210/PremPredict.git
 cd PremPredict
 python -m venv venv
 # Windows:
@@ -97,16 +109,23 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Launch the Web Interface
+### 2. Launch the Streamlit Scouting Dashboard
+
+```bash
+streamlit run streamlit_app.py
+```
+Open **[http://localhost:8501](http://localhost:8501)** to explore interactive statistical twin scouting, K-Means style clusters, and 2D PCA tactical maps.
+
+### 3. Launch the Unified Web App (Valuations + Matches + Scouting)
 
 ```bash
 python app.py
 ```
-Open **[http://localhost:8080](http://localhost:8080)** in your browser to explore the interactive dashboard.
+Open **[http://localhost:8080](http://localhost:8080)** to use the unified single-page application with Top Navigation switching.
 
-### 3. Run Pipelines via Terminal
+### 4. Run Pipelines via Terminal
 
-* **Train Player Valuation Models & View Evaluation**:
+* **Train Valuation Regression Models**:
   ```bash
   python main.py
   ```
@@ -114,61 +133,26 @@ Open **[http://localhost:8080](http://localhost:8080)** in your browser to explo
   ```bash
   python main_matches.py
   ```
-* **Interactive Terminal CLI**:
+* **Test Scouting Similarity Engine in Terminal**:
   ```bash
-  python interactive_cli.py
+  python model/scouting_engine.py
   ```
 
 ---
 
-## 🧠 Machine Learning Architecture
+## 🧭 Player Scouting & Similarity Engine
 
-### 1. Player Valuation Regression Engine
-Because transfer values are continuous monetary values (€ Millions), we employ **Linear Regression** with role-tailored feature sets:
-
-$$\hat{y}_{\text{value}} = \beta_0 + \sum_{i=1}^{k} \beta_i X_i$$
-
-Where:
-- $\beta_0$ represents the baseline market entry valuation.
-- $\beta_i$ represents the learned marginal valuation coefficient per unit metric (e.g., value per goal for forwards, value per tackle and duel won for center-backs, value per penalty saved for goalkeepers).
-- Age carries a distinct non-linear depreciation factor for older veterans vs youth prospects.
-
-### 2. Match Outcome Classification Engine
-Match forecasting is formulated as a 3-class probability classification task:
-$$\text{Outcome} \in \{\text{Home Win}, \text{Draw}, \text{Away Win}\}$$
-
-We benchmark **XGBoost (Extreme Gradient Boosting)** against **Random Forest Ensembles**. The models leverage:
-- **Squad Market Value Ratio & Difference**: Prevents naive home-bias artifacts, ensuring elite away clubs (e.g. Manchester City at Kenilworth Road or Portman Road) are realistically favored based on sheer squad quality.
-- **Rolling Form Factor**: Captures recent momentum and squad confidence over the preceding 5 matches.
-- **Shot Dominance & Possession Indices**: Quantifies chance creation and pitch territory control.
-
----
-
-## 🎨 Web Application Interface
-
-The front-end is crafted in modern **Tailwind CSS** with an **Obsidian Black (`#0B0F17`) & Electric Blue (`#3B82F6`)** dark theme:
-- **Unified Navigation Bar**: Switch seamlessly between Player Valuation and Match Prediction modes.
-- **Filterable Rosters**: Filter players by club, position role, search query, or sorting (Highest Value, Most Undervalued, Most Overvalued).
-- **Tactical Pitch Visualizer**: Dynamic stat cards featuring tactical radar metrics and real-time custom value recalculation.
-- **Fixture Simulator**: Select any home and away pairing to preview forecasted win probabilities and team comparative radar stats.
-
----
-
-## 📊 Evaluation & Metrics
-
-| Pipeline | Model | Key Metrics |
-| :--- | :--- | :--- |
-| **Player Valuation** | Role-Specific OLS Regression | $R^2 \approx 0.76$, MAE $\approx €7.2\text{M}$ |
-| **Match Outcome** | XGBoost & Random Forest | Multi-Class Log-Loss, Realistic Probability Calibration |
+### How it finds player matches:
+1. **Feature Standardisation**: Player metrics are standardized with `StandardScaler` so that high-magnitude metrics (minutes, passes) do not drown out low-magnitude metrics (goals, assists, penalties saved).
+2. **Cosine Vector Similarity**:
+   $$\text{Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
+   Evaluates angular alignment between two players' multi-metric profiles, returning an intuitive percentage match (0% to 100%).
+3. **K-Means Clustering**:
+   Unsupervised clustering partitions the player population into tactical style clusters by minimizing intra-cluster variance (inertia):
+   $$\arg\min_{S} \sum_{i=1}^{k} \sum_{x \in S_i} \|x - \mu_i\|^2$$
 
 ---
 
 ## 📄 License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-  <sub>Built with ⚽ for football analytics and machine learning enthusiasts.</sub>
-</div>

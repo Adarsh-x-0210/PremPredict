@@ -1,8 +1,9 @@
 """
-Unified Web UI Generator for Premier League AI Suite
+Unified Web UI Generator for PremPredict
 Integrates:
 1. Player Valuation Predictor (Role-specific Linear Regression for 441 players)
 2. Match Outcome Predictor (XGBoost & Random Forest Win/Draw/Loss classifier)
+3. Player Scouting & Similarity Recommender (Cosine Similarity & K-Means Style Clusters)
 With a unified Top Navigation Bar in obsidian black & electric blue theme.
 """
 
@@ -20,6 +21,8 @@ from model.predictor import TransferValuePredictor
 PLAYERS_JSON_PATH = os.path.join(PROJECT_DIR, "data", "players.json")
 MATCHES_JSON_PATH = os.path.join(PROJECT_DIR, "data", "match_predictions.json")
 TEAM_STATS_JSON_PATH = os.path.join(PROJECT_DIR, "data", "team_stats.json")
+SCOUTING_SIM_PATH = os.path.join(PROJECT_DIR, "data", "scouting_similarity.json")
+PLAYER_STYLES_PATH = os.path.join(PROJECT_DIR, "data", "player_styles.json")
 
 WEB_OUTPUT_PATH = os.path.join(PROJECT_DIR, "index.html")
 WIDGET_OUTPUT_PATH = r"C:\Users\Admin\.gemini\antigravity\brain\8d4c148a-7a62-48eb-8644-4a4628d38d4b\transfer_predictor_widget.html"
@@ -33,7 +36,14 @@ with open(MATCHES_JSON_PATH, "r", encoding="utf-8") as f:
 with open(TEAM_STATS_JSON_PATH, "r", encoding="utf-8") as f:
     team_stats = json.load(f)
 
+with open(SCOUTING_SIM_PATH, "r", encoding="utf-8") as f:
+    scouting_similarity = json.load(f)
+
+with open(PLAYER_STYLES_PATH, "r", encoding="utf-8") as f:
+    player_styles = json.load(f)
+
 teams = sorted(list(team_stats.keys()))
+all_player_names = sorted(list(scouting_similarity.keys()))
 
 # Train player predictor to extract model weights
 df = load_dataset()
@@ -46,7 +56,7 @@ html_content = f"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premier League AI Hub | Player Valuation & Match Predictor</title>
+  <title>PremPredict | Player Valuation, Match Outcomes & Scouting AI</title>
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
     :root {{
@@ -91,19 +101,22 @@ html_content = f"""<!DOCTYPE html>
         </div>
         <div>
           <h1 class="text-base sm:text-lg font-black tracking-tight text-white flex items-center gap-2">
-            Premier League AI Analytics Hub
+            PremPredict <span class="text-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider text-blue-400 border border-blue-500/30" style="background-color: rgba(37, 99, 235, 0.1);">AI Hub</span>
           </h1>
-          <p class="text-xs text-slate-400">Machine Learning tools for Player Valuations & Match Outcomes</p>
+          <p class="text-xs text-slate-400">Valuations • Match Forecasting • AI Player Scouting</p>
         </div>
       </div>
 
       <!-- Top Bar Functionality Tabs -->
-      <nav class="flex p-1 rounded-xl border w-full sm:w-auto justify-center" style="background-color: #0B0F17; border-color: #1F293D;">
-        <button id="nav-player-btn" onclick="switchNav('player')" class="flex-1 sm:flex-none px-4 py-2 text-xs sm:text-sm font-bold rounded-lg text-white transition-all shadow" style="background: linear-gradient(135deg, #2563EB, #1D4ED8);">
-          ⚽ Player Valuation
+      <nav class="flex p-1 rounded-xl border w-full sm:w-auto justify-center gap-1" style="background-color: #0B0F17; border-color: #1F293D;">
+        <button id="nav-player-btn" onclick="switchNav('player')" class="flex-1 sm:flex-none px-3.5 py-2 text-xs sm:text-sm font-bold rounded-lg text-white transition-all shadow" style="background: linear-gradient(135deg, #2563EB, #1D4ED8);">
+          ⚽ Valuation
         </button>
-        <button id="nav-match-btn" onclick="switchNav('match')" class="flex-1 sm:flex-none px-4 py-2 text-xs sm:text-sm font-bold rounded-lg text-slate-400 hover:text-white transition-all">
-          🏆 Match Outcome Predictor
+        <button id="nav-match-btn" onclick="switchNav('match')" class="flex-1 sm:flex-none px-3.5 py-2 text-xs sm:text-sm font-bold rounded-lg text-slate-400 hover:text-white transition-all">
+          🏆 Matches
+        </button>
+        <button id="nav-scout-btn" onclick="switchNav('scout')" class="flex-1 sm:flex-none px-3.5 py-2 text-xs sm:text-sm font-bold rounded-lg text-slate-400 hover:text-white transition-all">
+          🧭 Scouting
         </button>
       </nav>
     </header>
@@ -248,105 +261,94 @@ html_content = f"""<!DOCTYPE html>
       <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b pb-4 gap-3" style="border-color: #1F293D;">
         <div>
           <h2 class="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-            Premier League Match Outcome Predictor
-            <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-              XGBOOST & RANDOM FOREST
+            Match Outcome Predictor
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-600/20 text-emerald-400 border border-emerald-500/30">
+              760 FIXTURES • 2 SEASONS
             </span>
           </h2>
-          <p class="text-xs text-slate-400 mt-0.5">Trained on 760 historical matches with rolling form, shots on target, possession & home advantage</p>
+          <p class="text-xs text-slate-400 mt-0.5">XGBoost & Random Forest multi-class classifiers predicting Win / Draw / Loss probabilities</p>
         </div>
 
-        <!-- Model Selector Toggle -->
         <div class="flex p-1 rounded-xl border self-start sm:self-auto" style="background-color: #0B0F17; border-color: #1F293D;">
-          <button id="model-xgb-btn" onclick="setMatchModel('xgboost')" class="px-3.5 py-1.5 text-xs font-bold rounded-lg text-white transition-all shadow" style="background: linear-gradient(135deg, #2563EB, #1D4ED8);">
-            ⚡ XGBoost
+          <button id="model-xgb-btn" onclick="setMatchModel('xgboost')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg text-white" style="background: linear-gradient(135deg, #2563EB, #1D4ED8);">
+            XGBoost
           </button>
-          <button id="model-rf-btn" onclick="setMatchModel('random_forest')" class="px-3.5 py-1.5 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition-all">
-            🌲 Random Forest
+          <button id="model-rf-btn" onclick="setMatchModel('random_forest')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-400 hover:text-white">
+            Random Forest
           </button>
         </div>
       </div>
 
-      <!-- Quick Fixture Launcher -->
-      <div>
-        <label class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">⚡ Quick Marquee Fixtures</label>
-        <div class="flex flex-wrap gap-2">
-          <button onclick="setFixture('Arsenal', 'Chelsea')" class="px-3 py-1.5 rounded-lg border text-xs font-semibold text-slate-300 hover:text-white hover:border-blue-500 transition" style="background-color: #0B0F17; border-color: #1F293D;">Arsenal vs Chelsea</button>
-          <button onclick="setFixture('Manchester City', 'Liverpool')" class="px-3 py-1.5 rounded-lg border text-xs font-semibold text-slate-300 hover:text-white hover:border-blue-500 transition" style="background-color: #0B0F17; border-color: #1F293D;">Man City vs Liverpool</button>
-          <button onclick="setFixture('Tottenham', 'Arsenal')" class="px-3 py-1.5 rounded-lg border text-xs font-semibold text-slate-300 hover:text-white hover:border-blue-500 transition" style="background-color: #0B0F17; border-color: #1F293D;">Tottenham vs Arsenal</button>
-          <button onclick="setFixture('Aston Villa', 'Manchester United')" class="px-3 py-1.5 rounded-lg border text-xs font-semibold text-slate-300 hover:text-white hover:border-blue-500 transition" style="background-color: #0B0F17; border-color: #1F293D;">Aston Villa vs Man United</button>
-          <button onclick="setFixture('Newcastle', 'West Ham')" class="px-3 py-1.5 rounded-lg border text-xs font-semibold text-slate-300 hover:text-white hover:border-blue-500 transition" style="background-color: #0B0F17; border-color: #1F293D;">Newcastle vs West Ham</button>
-        </div>
-      </div>
-
-      <!-- Team Selectors -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-        <!-- Home Team -->
-        <div class="p-4 rounded-xl border relative" style="background-color: #0B0F17; border-color: #1F293D;">
-          <span class="text-[10px] font-extrabold uppercase tracking-widest text-blue-400 block mb-1">🏠 Home Team (Home Advantage)</span>
-          <select id="home-team-select" class="w-full px-3 py-2 rounded-lg border text-white font-bold text-base focus:outline-none focus:ring-2 focus:ring-blue-500" style="background-color: #161F30; border-color: #25334D;" onchange="calculateMatch()">
-            {"".join(f'<option value="{t}" {"selected" if t=="Arsenal" else ""}>{t}</option>' for t in teams)}
+      <!-- Match Selectors Card -->
+      <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 items-center">
+        <div class="sm:col-span-2">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Home Team</label>
+          <select id="home-team-select" onchange="calculateMatch()" class="w-full px-3.5 py-2.5 rounded-xl border text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500 font-semibold" style="background-color: #0B0F17; border-color: #1F293D;">
+            {"".join(f'<option value="{t}" {"selected" if t == "Arsenal" else ""}>{t}</option>' for t in teams)}
           </select>
         </div>
 
-        <!-- Away Team -->
-        <div class="p-4 rounded-xl border relative" style="background-color: #0B0F17; border-color: #1F293D;">
-          <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-400 block mb-1">✈️ Away Team (Visiting)</span>
-          <select id="away-team-select" class="w-full px-3 py-2 rounded-lg border text-white font-bold text-base focus:outline-none focus:ring-2 focus:ring-blue-500" style="background-color: #161F30; border-color: #25334D;" onchange="calculateMatch()">
-            {"".join(f'<option value="{t}" {"selected" if t=="Chelsea" else ""}>{t}</option>' for t in teams)}
+        <div class="text-center font-black text-slate-500 text-sm sm:pt-6">VS</div>
+
+        <div class="sm:col-span-2">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Away Team</label>
+          <select id="away-team-select" onchange="calculateMatch()" class="w-full px-3.5 py-2.5 rounded-xl border text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500 font-semibold" style="background-color: #0B0F17; border-color: #1F293D;">
+            {"".join(f'<option value="{t}" {"selected" if t == "Chelsea" else ""}>{t}</option>' for t in teams)}
           </select>
         </div>
       </div>
 
-      <!-- Live Match Prediction Display Card -->
-      <div class="rounded-2xl p-6 border text-center relative overflow-hidden" style="background: linear-gradient(135deg, rgba(37,99,235,0.18), rgba(15,23,42,0.98), rgba(16,185,129,0.18)); border-color: #2563EB;">
-        <span id="match-model-tag" class="text-xs uppercase font-extrabold tracking-widest text-blue-400">XGBoost Match Prediction</span>
-        
-        <div id="match-outcome-title" class="text-2xl sm:text-4xl font-black text-white my-3 tracking-tight">
-          Predicted Outcome: Home Win (H)
+      <!-- Quick Derby Shortcuts -->
+      <div class="flex flex-wrap items-center gap-2 text-xs">
+        <span class="text-slate-500 font-medium">Quick Fixtures:</span>
+        <button onclick="setFixture('Arsenal', 'Chelsea')" class="px-2.5 py-1 rounded-lg border text-slate-300 hover:text-white hover:border-blue-500" style="background-color: #0B0F17; border-color: #1F293D;">Arsenal vs Chelsea</button>
+        <button onclick="setFixture('Manchester City', 'Liverpool')" class="px-2.5 py-1 rounded-lg border text-slate-300 hover:text-white hover:border-blue-500" style="background-color: #0B0F17; border-color: #1F293D;">Man City vs Liverpool</button>
+        <button onclick="setFixture('Tottenham', 'Arsenal')" class="px-2.5 py-1 rounded-lg border text-slate-300 hover:text-white hover:border-blue-500" style="background-color: #0B0F17; border-color: #1F293D;">N. London Derby</button>
+        <button onclick="setFixture('Liverpool', 'Manchester United')" class="px-2.5 py-1 rounded-lg border text-slate-300 hover:text-white hover:border-blue-500" style="background-color: #0B0F17; border-color: #1F293D;">Liverpool vs Man Utd</button>
+      </div>
+
+      <!-- Probabilities Display Card -->
+      <div class="rounded-2xl p-5 sm:p-6 border text-center space-y-4" style="background: linear-gradient(135deg, rgba(17,24,39,0.95), rgba(30,41,59,0.95)); border-color: #1F293D;">
+        <div class="flex items-center justify-between text-xs font-bold text-slate-400">
+          <span id="prob-home-label">Arsenal Win</span>
+          <span>Draw</span>
+          <span id="prob-away-label">Chelsea Win</span>
         </div>
 
-        <!-- Probability Bars Gauge -->
-        <div class="space-y-3 max-w-xl mx-auto mt-5">
-          <!-- Home Win -->
-          <div>
-            <div class="flex justify-between text-xs font-bold mb-1">
-              <span id="prob-home-label" class="text-blue-400">Arsenal Win</span>
-              <span id="prob-home-val" class="text-blue-400 font-extrabold">57.2%</span>
-            </div>
-            <div class="w-full h-3 rounded-full bg-slate-900 border border-slate-800 overflow-hidden">
-              <div id="prob-home-bar" class="h-full rounded-full transition-all duration-500" style="width: 57.2%; background: linear-gradient(90deg, #2563EB, #3B82F6);"></div>
-            </div>
-          </div>
+        <!-- 3-Segment Stacked Progress Bar -->
+        <div class="w-full h-4 rounded-full flex overflow-hidden border" style="background-color: #0B0F17; border-color: #1F293D;">
+          <div id="prob-home-bar" class="h-full transition-all duration-300" style="width: 55%; background: linear-gradient(90deg, #2563EB, #3B82F6);"></div>
+          <div id="prob-draw-bar" class="h-full transition-all duration-300" style="width: 25%; background: #64748B;"></div>
+          <div id="prob-away-bar" class="h-full transition-all duration-300" style="width: 20%; background: linear-gradient(90deg, #F59E0B, #EF4444);"></div>
+        </div>
 
-          <!-- Draw -->
-          <div>
-            <div class="flex justify-between text-xs font-bold mb-1">
-              <span class="text-slate-400">Draw</span>
-              <span id="prob-draw-val" class="text-slate-300 font-extrabold">17.5%</span>
-            </div>
-            <div class="w-full h-3 rounded-full bg-slate-900 border border-slate-800 overflow-hidden">
-              <div id="prob-draw-bar" class="h-full rounded-full transition-all duration-500" style="width: 17.5%; background: #64748B;"></div>
-            </div>
+        <div class="grid grid-cols-3 gap-2 text-center pt-1">
+          <div class="p-3 rounded-xl border" style="background-color: #0B0F17; border-color: #1F293D;">
+            <div class="text-[10px] uppercase font-bold text-blue-400">Home Win</div>
+            <div id="prob-home-val" class="text-xl sm:text-2xl font-black text-white mt-0.5">55.1%</div>
           </div>
+          <div class="p-3 rounded-xl border" style="background-color: #0B0F17; border-color: #1F293D;">
+            <div class="text-[10px] uppercase font-bold text-slate-400">Draw</div>
+            <div id="prob-draw-val" class="text-xl sm:text-2xl font-black text-slate-300 mt-0.5">17.5%</div>
+          </div>
+          <div class="p-3 rounded-xl border" style="background-color: #0B0F17; border-color: #1F293D;">
+            <div class="text-[10px] uppercase font-bold text-amber-400">Away Win</div>
+            <div id="prob-away-val" class="text-xl sm:text-2xl font-black text-white mt-0.5">27.3%</div>
+          </div>
+        </div>
 
-          <!-- Away Win -->
-          <div>
-            <div class="flex justify-between text-xs font-bold mb-1">
-              <span id="prob-away-label" class="text-amber-400">Chelsea Win</span>
-              <span id="prob-away-val" class="text-amber-400 font-extrabold">25.3%</span>
-            </div>
-            <div class="w-full h-3 rounded-full bg-slate-900 border border-slate-800 overflow-hidden">
-              <div id="prob-away-bar" class="h-full rounded-full transition-all duration-500" style="width: 25.3%; background: linear-gradient(90deg, #F59E0B, #EF4444);"></div>
-            </div>
+        <div class="pt-2">
+          <span id="match-model-tag" class="text-xs uppercase font-extrabold tracking-wider text-blue-400">XGBoost Match Prediction</span>
+          <div id="match-outcome-title" class="text-lg sm:text-2xl font-black text-white mt-1">
+            Predicted: Arsenal Win (55.1%)
           </div>
         </div>
       </div>
 
-      <!-- Comparative Head-to-Head Stats Cards -->
+      <!-- Comparative Team Stats Grid -->
       <div>
-        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Head-to-Head Recent Form & Performance Metrics</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Head-to-Head Rolling Metrics</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center text-xs">
           
           <div class="p-3 rounded-xl border" style="background-color: #0B0F17; border-color: #1F293D;">
             <div class="text-[10px] uppercase font-bold text-slate-400">Form (Last 5 Pts)</div>
@@ -398,6 +400,84 @@ html_content = f"""<!DOCTYPE html>
 
     </main>
 
+
+    <!-- ======================================================== -->
+    <!-- SECTION 3: PLAYER SCOUTING & SIMILARITY RECOMMENDER -->
+    <!-- ======================================================== -->
+    <main id="section-scout" class="rounded-2xl p-5 sm:p-7 shadow-2xl border space-y-6 hidden" style="background-color: #111827; border-color: #1F293D;">
+      
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b pb-4 gap-3" style="border-color: #1F293D;">
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+            AI Player Scouting & Similarity Recommender
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-cyan-600/20 text-cyan-400 border border-cyan-500/30">
+              COSINE SIMILARITY • K-MEANS
+            </span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-0.5">Discovers statistical twins and playing style archetypes across 441 Premier League players</p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="http://localhost:8501" target="_blank" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg text-white border border-blue-500/40 hover:bg-blue-600/20 transition-all flex items-center gap-1.5" style="background-color: #0B0F17;">
+            <span>⚡ Open Streamlit Dashboard</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Search Target Player Input & Filters -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div class="sm:col-span-2">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Select or Search Target Player</label>
+          <select id="scout-player-select" onchange="updateScoutingView()" class="w-full px-3.5 py-2.5 rounded-xl border text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500 font-semibold" style="background-color: #0B0F17; border-color: #1F293D;">
+            {"".join(f'<option value="{p}" {"selected" if p == "Bukayo Saka" else ""}>{p}</option>' for p in all_player_names)}
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Filter Options</label>
+          <div class="flex items-center gap-3 pt-2">
+            <label class="text-xs text-slate-300 flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" id="scout-same-pos-check" onchange="updateScoutingView()" class="rounded border-slate-700 bg-slate-900 text-blue-600 focus:ring-0">
+              <span>Same Position Only</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Target Player Highlight Card -->
+      <div id="scout-target-card" class="rounded-2xl p-5 border relative overflow-hidden" style="background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(17,24,39,0.95)); border-color: #1F293D;">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span id="scout-target-team" class="px-2 py-0.5 rounded text-[11px] font-bold border text-blue-400 border-blue-500/30" style="background-color: rgba(37,99,235,0.15);">Arsenal</span>
+              <span id="scout-target-pos" class="px-2 py-0.5 rounded text-[11px] font-bold border text-emerald-400 border-emerald-500/30" style="background-color: rgba(16,185,129,0.15);">RW</span>
+              <span id="scout-target-age" class="text-xs text-slate-400">Age 23</span>
+            </div>
+            <h3 id="scout-target-name" class="text-xl sm:text-2xl font-black text-white">Bukayo Saka</h3>
+            <p class="text-xs text-slate-400 mt-1">
+              Tactical Archetype: <strong id="scout-target-style" class="text-cyan-400">Creative Winger / Attacking Spark</strong>
+            </p>
+          </div>
+          <div class="sm:text-right">
+            <div class="text-[10px] uppercase font-bold text-slate-400">Market Valuation</div>
+            <div id="scout-target-val" class="text-2xl sm:text-3xl font-black text-emerald-400">€140.0M</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Closest Statistical Matches -->
+      <div>
+        <div class="flex justify-between items-center mb-3">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">
+            Closest Statistical Matches (Cosine Similarity)
+          </h3>
+          <span class="text-xs text-slate-500">Multidimensional feature vector comparison</span>
+        </div>
+
+        <div id="scout-results-container" class="space-y-3"></div>
+      </div>
+
+    </main>
+
   </div>
 
   <script>
@@ -406,33 +486,47 @@ html_content = f"""<!DOCTYPE html>
     const MATCH_PREDICTIONS = {json.dumps(match_predictions)};
     const TEAM_STATS = {json.dumps(team_stats)};
     const ALL_PLAYERS = {json.dumps(players_data)};
+    const SCOUTING_SIMILARITY = {json.dumps(scouting_similarity)};
+    const PLAYER_STYLES = {json.dumps(player_styles)};
 
     // Navigation Switcher
     function switchNav(tab) {{
       const playerSec = document.getElementById("section-player");
       const matchSec = document.getElementById("section-match");
+      const scoutSec = document.getElementById("section-scout");
       const playerNavBtn = document.getElementById("nav-player-btn");
       const matchNavBtn = document.getElementById("nav-match-btn");
+      const scoutNavBtn = document.getElementById("nav-scout-btn");
+
+      // Reset all buttons
+      [playerNavBtn, matchNavBtn, scoutNavBtn].forEach(b => {{
+        b.style.background = "transparent";
+        b.classList.remove("text-white");
+        b.classList.add("text-slate-400");
+      }});
+
+      // Hide all sections
+      playerSec.classList.add("hidden");
+      matchSec.classList.add("hidden");
+      scoutSec.classList.add("hidden");
 
       if (tab === "player") {{
         playerSec.classList.remove("hidden");
-        matchSec.classList.add("hidden");
         playerNavBtn.style.background = "linear-gradient(135deg, #2563EB, #1D4ED8)";
         playerNavBtn.classList.add("text-white");
         playerNavBtn.classList.remove("text-slate-400");
-        matchNavBtn.style.background = "transparent";
-        matchNavBtn.classList.remove("text-white");
-        matchNavBtn.classList.add("text-slate-400");
-      }} else {{
+      }} else if (tab === "match") {{
         matchSec.classList.remove("hidden");
-        playerSec.classList.add("hidden");
         matchNavBtn.style.background = "linear-gradient(135deg, #2563EB, #1D4ED8)";
         matchNavBtn.classList.add("text-white");
         matchNavBtn.classList.remove("text-slate-400");
-        playerNavBtn.style.background = "transparent";
-        playerNavBtn.classList.remove("text-white");
-        playerNavBtn.classList.add("text-slate-400");
         calculateMatch();
+      }} else if (tab === "scout") {{
+        scoutSec.classList.remove("hidden");
+        scoutNavBtn.style.background = "linear-gradient(135deg, #2563EB, #1D4ED8)";
+        scoutNavBtn.classList.add("text-white");
+        scoutNavBtn.classList.remove("text-slate-400");
+        updateScoutingView();
       }}
     }}
 
@@ -526,40 +620,226 @@ html_content = f"""<!DOCTYPE html>
     }}
 
     // -------------------------------------------------------------
-    // PLAYER VALUATION LOGIC
+    // PLAYER SCOUTING LOGIC
     // -------------------------------------------------------------
-    const ROLE_TO_GROUP = {{
-      "CF": "CF_SS", "SS": "CF_SS", "RW": "WINGERS", "LW": "WINGERS",
-      "AMF": "AMF", "CMF": "CMF", "DMF": "DMF", "CB": "CB",
-      "RB": "FULLBACK", "LB": "FULLBACK", "GK": "GK"
-    }};
+    function updateScoutingView() {{
+      const targetName = document.getElementById("scout-player-select").value;
+      const samePosOnly = document.getElementById("scout-same-pos-check").checked;
+      
+      const target = ALL_PLAYERS.find(p => p.player_name === targetName);
+      if (!target) return;
 
-    const METRIC_DEFINITIONS = {{
-      "goals": {{ label: "Goals Scored", min: 0, max: 36, step: 1, default: 15, unit: "goals", color: "#34D399" }},
-      "assists": {{ label: "Assists Provided", min: 0, max: 22, step: 1, default: 6, unit: "assists", color: "#60A5FA" }},
-      "chances_created": {{ label: "Chances Created", min: 5, max: 130, step: 1, default: 65, unit: "chances", color: "#38BDF8" }},
-      "dribbles_completed": {{ label: "Dribbles Completed", min: 5, max: 110, step: 1, default: 55, unit: "dribbles", color: "#C084FC" }},
-      "balls_recovered": {{ label: "Balls Recovered", min: 30, max: 260, step: 5, default: 160, unit: "recoveries", color: "#F472B6" }},
-      "line_breaking_passes": {{ label: "Line-Breaking Passes", min: 30, max: 290, step: 5, default: 150, unit: "passes", color: "#FBBF24" }},
-      "pass_accuracy": {{ label: "Pass Accuracy (%)", min: 60, max: 96, step: 0.5, default: 85, unit: "%", color: "#A3E635" }},
-      "duels_won": {{ label: "Duels Won", min: 30, max: 240, step: 5, default: 150, unit: "duels", color: "#FB923C" }},
-      "aerial_duels_won": {{ label: "Aerial Duels Won", min: 10, max: 130, step: 2, default: 65, unit: "aerials", color: "#E879F9" }},
-      "successful_tackles": {{ label: "Successful Tackles", min: 10, max: 105, step: 2, default: 55, unit: "tackles", color: "#2DD4BF" }},
-      "saves": {{ label: "Saves Made", min: 10, max: 160, step: 2, default: 95, unit: "saves", color: "#818CF8" }},
-      "penalties_saved": {{ label: "Penalties Saved", min: 0, max: 5, step: 1, default: 1, unit: "pens", color: "#F87171" }}
-    }};
+      const styleInfo = PLAYER_STYLES[targetName] || {{ style: "Versatile Profile", cluster: 0 }};
 
+      document.getElementById("scout-target-name").innerText = target.player_name;
+      document.getElementById("scout-target-team").innerText = target.team;
+      document.getElementById("scout-target-pos").innerText = target.position;
+      document.getElementById("scout-target-age").innerText = `Age ${{target.age}}`;
+      document.getElementById("scout-target-style").innerText = styleInfo.style;
+      document.getElementById("scout-target-val").innerText = `€${{target.market_value_eur_m}}M`;
+
+      // Render Similar Matches
+      let matches = SCOUTING_SIMILARITY[targetName] || [];
+      if (samePosOnly) {{
+        matches = matches.filter(m => m.position === target.position);
+      }}
+
+      const container = document.getElementById("scout-results-container");
+      container.innerHTML = "";
+
+      if (matches.length === 0) {{
+        container.innerHTML = `<div class="p-6 text-center text-slate-400 text-xs">No similar players match the selected filters.</div>`;
+        return;
+      }}
+
+      matches.forEach((m, idx) => {{
+        const pct = m.similarity_pct;
+        const color = pct >= 95 ? "#34D399" : pct >= 90 ? "#38BDF8" : "#F59E0B";
+        
+        const card = document.createElement("div");
+        card.className = "p-4 rounded-xl border transition-all hover:border-blue-500/50";
+        card.style.backgroundColor = "#161F30";
+        card.style.borderColor = "#1F293D";
+
+        card.innerHTML = `
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-white text-sm sm:text-base">#${{idx + 1}} ${{m.name}}</span>
+                <span class="text-xs px-2 py-0.5 rounded font-semibold text-blue-400 bg-blue-950/60 border border-blue-800/50">${{m.position}}</span>
+                <span class="text-xs px-2 py-0.5 rounded font-medium text-slate-300" style="background-color: #0B0F17; border: 1px solid #1F293D;">${{m.team}}</span>
+                <span class="text-xs text-slate-400">Age ${{m.age}}</span>
+              </div>
+              <div class="text-xs text-slate-400 mt-1">
+                Style: <span class="text-slate-200 font-medium">${{m.style}}</span> • Market Value: <span class="text-emerald-400 font-semibold">€${{m.market_val}}M</span>
+              </div>
+            </div>
+            <div class="sm:text-right">
+              <span class="text-lg font-black" style="color: ${{color}};">${{pct}}%</span>
+              <span class="text-[10px] uppercase font-bold text-slate-400 ml-1">Similarity</span>
+            </div>
+          </div>
+          <div class="w-full h-1.5 rounded-full overflow-hidden" style="background-color: #0B0F17;">
+            <div class="h-full rounded-full" style="width: ${{pct}}%; background-color: ${{color}};"></div>
+          </div>
+          <div class="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-slate-400 mt-2.5 pt-2 border-t" style="border-color: #1F293D;">
+            <span>Goals: <strong class="text-white">${{m.goals}}</strong></span>
+            <span>Assists: <strong class="text-white">${{m.assists}}</strong></span>
+            <span>Chances Created: <strong class="text-white">${{m.chances}}</strong></span>
+            <span>Tackles & Duels: <strong class="text-white">${{m.tackles_duels}}</strong></span>
+          </div>
+        `;
+        container.appendChild(card);
+      }});
+    }}
+
+    // -------------------------------------------------------------
+    // PLAYER VALUATION PREDICTOR LOGIC
+    // -------------------------------------------------------------
     let currentRole = "CF";
     let listRoleFilter = "";
+
+    const ROLE_CONFIGS = {{
+      "CF": {{
+        name: "Central Forward",
+        group: "CF_SS",
+        sliders: [
+          {{ id: "goals", label: "Goals Scored", min: 0, max: 35, val: 15, step: 1 }},
+          {{ id: "assists", label: "Assists", min: 0, max: 20, val: 5, step: 1 }}
+        ]
+      }},
+      "SS": {{
+        name: "Second Striker",
+        group: "CF_SS",
+        sliders: [
+          {{ id: "goals", label: "Goals Scored", min: 0, max: 30, val: 10, step: 1 }},
+          {{ id: "assists", label: "Assists", min: 0, max: 20, val: 6, step: 1 }}
+        ]
+      }},
+      "RW": {{
+        name: "Right Winger",
+        group: "WINGERS",
+        sliders: [
+          {{ id: "goals", label: "Goals Scored", min: 0, max: 25, val: 8, step: 1 }},
+          {{ id: "assists", label: "Assists", min: 0, max: 20, val: 7, step: 1 }},
+          {{ id: "chances_created", label: "Chances Created", min: 0, max: 120, val: 55, step: 2 }},
+          {{ id: "dribbles_completed", label: "Dribbles Completed", min: 0, max: 120, val: 50, step: 2 }}
+        ]
+      }},
+      "LW": {{
+        name: "Left Winger",
+        group: "WINGERS",
+        sliders: [
+          {{ id: "goals", label: "Goals Scored", min: 0, max: 25, val: 8, step: 1 }},
+          {{ id: "assists", label: "Assists", min: 0, max: 20, val: 6, step: 1 }},
+          {{ id: "chances_created", label: "Chances Created", min: 0, max: 120, val: 50, step: 2 }},
+          {{ id: "dribbles_completed", label: "Dribbles Completed", min: 0, max: 120, val: 55, step: 2 }}
+        ]
+      }},
+      "AMF": {{
+        name: "Attacking Midfielder",
+        group: "AMF",
+        sliders: [
+          {{ id: "goals", label: "Goals Scored", min: 0, max: 25, val: 6, step: 1 }},
+          {{ id: "assists", label: "Assists", min: 0, max: 20, val: 8, step: 1 }},
+          {{ id: "chances_created", label: "Chances Created", min: 0, max: 120, val: 65, step: 2 }}
+        ]
+      }},
+      "CMF": {{
+        name: "Central Midfielder",
+        group: "CMF",
+        sliders: [
+          {{ id: "balls_recovered", label: "Balls Recovered", min: 20, max: 280, val: 140, step: 5 }},
+          {{ id: "line_breaking_passes", label: "Line-Breaking Passes", min: 20, max: 300, val: 130, step: 5 }},
+          {{ id: "pass_accuracy", label: "Pass Accuracy %", min: 65, max: 96, val: 86, step: 0.5 }}
+        ]
+      }},
+      "DMF": {{
+        name: "Defensive Midfielder",
+        group: "DMF",
+        sliders: [
+          {{ id: "balls_recovered", label: "Balls Recovered", min: 30, max: 300, val: 180, step: 5 }},
+          {{ id: "duels_won", label: "Duels Won", min: 20, max: 280, val: 150, step: 5 }},
+          {{ id: "aerial_duels_won", label: "Aerial Duels Won", min: 5, max: 90, val: 40, step: 2 }},
+          {{ id: "line_breaking_passes", label: "Line-Breaking Passes", min: 20, max: 300, val: 120, step: 5 }}
+        ]
+      }},
+      "CB": {{
+        name: "Centre Back",
+        group: "CB",
+        sliders: [
+          {{ id: "duels_won", label: "Duels Won", min: 30, max: 250, val: 140, step: 5 }},
+          {{ id: "successful_tackles", label: "Successful Tackles", min: 10, max: 100, val: 50, step: 2 }},
+          {{ id: "aerial_duels_won", label: "Aerial Duels Won", min: 20, max: 150, val: 75, step: 2 }}
+        ]
+      }},
+      "RB": {{
+        name: "Right Back",
+        group: "FULLBACK",
+        sliders: [
+          {{ id: "assists", label: "Assists", min: 0, max: 15, val: 3, step: 1 }},
+          {{ id: "duels_won", label: "Duels Won", min: 30, max: 220, val: 120, step: 5 }},
+          {{ id: "successful_tackles", label: "Successful Tackles", min: 15, max: 110, val: 55, step: 2 }},
+          {{ id: "aerial_duels_won", label: "Aerial Duels Won", min: 5, max: 70, val: 28, step: 2 }}
+        ]
+      }},
+      "LB": {{
+        name: "Left Back",
+        group: "FULLBACK",
+        sliders: [
+          {{ id: "assists", label: "Assists", min: 0, max: 15, val: 3, step: 1 }},
+          {{ id: "duels_won", label: "Duels Won", min: 30, max: 220, val: 120, step: 5 }},
+          {{ id: "successful_tackles", label: "Successful Tackles", min: 15, max: 110, val: 55, step: 2 }},
+          {{ id: "aerial_duels_won", label: "Aerial Duels Won", min: 5, max: 70, val: 28, step: 2 }}
+        ]
+      }},
+      "GK": {{
+        name: "Goalkeeper",
+        group: "GK",
+        sliders: [
+          {{ id: "saves", label: "Saves Made", min: 5, max: 160, val: 80, step: 2 }},
+          {{ id: "penalties_saved", label: "Penalties Saved", min: 0, max: 4, val: 1, step: 1 }},
+          {{ id: "pass_accuracy", label: "Passing Accuracy %", min: 50, max: 92, val: 80, step: 0.5 }}
+        ]
+      }}
+    }};
+
+    function switchPlayerTab(tab) {{
+      const predView = document.getElementById("tab-player-predict");
+      const lookView = document.getElementById("tab-player-lookup");
+      const predBtn = document.getElementById("tab-predict-btn");
+      const lookBtn = document.getElementById("tab-lookup-btn");
+
+      if (tab === "predict") {{
+        predView.classList.remove("hidden");
+        lookView.classList.add("hidden");
+        predBtn.style.background = "linear-gradient(135deg, #2563EB, #1D4ED8)";
+        predBtn.classList.add("text-white");
+        predBtn.classList.remove("text-slate-400");
+        lookBtn.style.background = "transparent";
+        lookBtn.classList.remove("text-white");
+        lookBtn.classList.add("text-slate-400");
+      }} else {{
+        predView.classList.add("hidden");
+        lookView.classList.remove("hidden");
+        lookBtn.style.background = "linear-gradient(135deg, #2563EB, #1D4ED8)";
+        lookBtn.classList.add("text-white");
+        lookBtn.classList.remove("text-slate-400");
+        predBtn.style.background = "transparent";
+        predBtn.classList.remove("text-white");
+        predBtn.classList.add("text-slate-400");
+        filterPlayers();
+      }}
+    }}
 
     function selectRole(role) {{
       currentRole = role;
       document.querySelectorAll(".role-btn").forEach(btn => {{
-        if (btn.dataset.role === role) {{
+        if (btn.getAttribute("data-role") === role) {{
           btn.style.backgroundColor = "#2563EB";
           btn.style.borderColor = "#3B82F6";
-          btn.classList.remove("text-slate-400");
           btn.classList.add("text-white");
+          btn.classList.remove("text-slate-400");
         }} else {{
           btn.style.backgroundColor = "#0B0F17";
           btn.style.borderColor = "#1F293D";
@@ -568,128 +848,108 @@ html_content = f"""<!DOCTYPE html>
         }}
       }});
 
-      const groupKey = ROLE_TO_GROUP[role] || "CF_SS";
-      const model = PLAYER_MODELS[groupKey];
-      document.getElementById("pos-group-desc").innerText = `${{role}} (${{model.name}})`;
-
-      renderDynamicSliders(model.features);
+      const cfg = ROLE_CONFIGS[role];
+      document.getElementById("pos-group-desc").innerText = `${{role}} (${{cfg.name}})`;
+      buildDynamicSliders(cfg);
       calculatePlayer();
     }}
 
-    function renderDynamicSliders(features) {{
+    function buildDynamicSliders(cfg) {{
       const container = document.getElementById("dynamic-sliders");
       container.innerHTML = "";
-      const roleFeatures = features.filter(f => f !== "age" && f !== "minutes_played");
-
-      roleFeatures.forEach(feat => {{
-        const def = METRIC_DEFINITIONS[feat] || {{ label: feat, min: 0, max: 100, step: 1, default: 50, unit: "", color: "#3B82F6" }};
-        const box = document.createElement("div");
-        box.className = "p-4 rounded-xl border";
-        box.style.backgroundColor = "#0B0F17";
-        box.style.borderColor = "#1F293D";
-
-        box.innerHTML = `
+      cfg.sliders.forEach(s => {{
+        const div = document.createElement("div");
+        div.className = "p-4 rounded-xl border";
+        div.style.backgroundColor = "#0B0F17";
+        div.style.borderColor = "#1F293D";
+        div.innerHTML = `
           <div class="flex justify-between items-center text-xs sm:text-sm mb-2">
-            <span class="font-medium text-slate-400">${{def.label}}</span>
-            <span id="${{feat}}-val" class="font-black px-2 py-0.5 rounded" style="color: ${{def.color}}; background-color: #161F30;">
-              ${{def.default}} ${{def.unit}}
-            </span>
+            <span class="font-medium text-slate-400">${{s.label}}</span>
+            <span id="${{s.id}}-val" class="font-black text-white px-2 py-0.5 rounded" style="background-color: #161F30;">${{s.val}}</span>
           </div>
-          <input id="${{feat}}-slider" type="range" min="${{def.min}}" max="${{def.max}}" step="${{def.step}}" value="${{def.default}}" class="w-full cursor-pointer" oninput="calculatePlayer()">
+          <input id="${{s.id}}-slider" type="range" min="${{s.min}}" max="${{s.max}}" step="${{s.step}}" value="${{s.val}}" class="w-full cursor-pointer" oninput="calculatePlayer()">
         `;
-        container.appendChild(box);
+        container.appendChild(div);
       }});
     }}
 
     function calculatePlayer() {{
       const age = parseFloat(document.getElementById("age-slider").value);
       const mins = parseFloat(document.getElementById("mins-slider").value);
-      document.getElementById("age-val").innerText = age + " years";
-      document.getElementById("mins-val").innerText = mins.toLocaleString() + " mins";
+      document.getElementById("age-val").innerText = `${{age}} years`;
+      document.getElementById("mins-val").innerText = `${{mins.toLocaleString()}} mins`;
 
-      const groupKey = ROLE_TO_GROUP[currentRole] || "CF_SS";
-      const model = PLAYER_MODELS[groupKey];
+      const cfg = ROLE_CONFIGS[currentRole];
+      const model = PLAYER_MODELS[cfg.group];
+      if (!model) return;
 
-      let total = model.intercept;
-      const breakdownItems = [
-        `<span class="px-2.5 py-1 rounded-lg border text-slate-300" style="background-color: #0B0F17; border-color: #1F293D;">Base: €${{model.intercept.toFixed(1)}}M</span>`
-      ];
-
-      model.coefficients.forEach(coef => {{
-        const feat = coef.feature;
-        const weight = coef.weight;
-        let featVal = 0;
-
-        if (feat === "age") featVal = age;
-        else if (feat === "minutes_played") featVal = mins;
-        else {{
-          const el = document.getElementById(`${{feat}}-slider`);
-          if (el) {{
-            featVal = parseFloat(el.value);
-            const def = METRIC_DEFINITIONS[feat];
-            const valSpan = document.getElementById(`${{feat}}-val`);
-            if (valSpan && def) valSpan.innerText = `${{featVal}} ${{def.unit}}`;
+      const inputValues = {{ age: age, minutes_played: mins }};
+      cfg.sliders.forEach(s => {{
+        const el = document.getElementById(`${{s.id}}-slider`);
+        if (el) {{
+          const val = parseFloat(el.value);
+          inputValues[s.id] = val;
+          const displayEl = document.getElementById(`${{s.id}}-val`);
+          if (displayEl) {{
+            displayEl.innerText = s.id.includes("accuracy") ? `${{val}}%` : val;
           }}
-        }}
-
-        const impact = featVal * weight;
-        total += impact;
-
-        if (feat !== "minutes_played") {{
-          const sign = impact >= 0 ? "+" : "";
-          const color = impact >= 0 ? "#34D399" : "#F87171";
-          const bg = impact >= 0 ? "rgba(16,185,129,0.15)" : "rgba(239,68,68,0.15)";
-          breakdownItems.push(
-            `<span class="px-2.5 py-1 rounded-lg border text-[11px]" style="background-color: ${{bg}}; color: ${{color}}; border-color: rgba(255,255,255,0.1);">${{sign}}€${{impact.toFixed(1)}}M (${{feat.replace(/_/g, " ")}})</span>`
-          );
         }}
       }});
 
-      total = Math.max(0.5, total);
-      document.getElementById("predicted-val").innerText = total.toFixed(1);
-      document.getElementById("breakdown-container").innerHTML = breakdownItems.join("");
-    }}
+      let val = model.intercept;
+      const breakdownEl = document.getElementById("breakdown-container");
+      breakdownEl.innerHTML = "";
 
-    function switchPlayerTab(tab) {{
-      if (tab === "predict") {{
-        document.getElementById("tab-player-predict").classList.remove("hidden");
-        document.getElementById("tab-player-lookup").classList.add("hidden");
-        document.getElementById("tab-predict-btn").style.background = "linear-gradient(135deg, #2563EB, #1D4ED8)";
-        document.getElementById("tab-predict-btn").classList.add("text-white");
-        document.getElementById("tab-predict-btn").classList.remove("text-slate-400");
-        document.getElementById("tab-lookup-btn").style.background = "transparent";
-        document.getElementById("tab-lookup-btn").classList.remove("text-white");
-        document.getElementById("tab-lookup-btn").classList.add("text-slate-400");
-      }} else {{
-        document.getElementById("tab-player-predict").classList.add("hidden");
-        document.getElementById("tab-player-lookup").classList.remove("hidden");
-        document.getElementById("tab-lookup-btn").style.background = "linear-gradient(135deg, #2563EB, #1D4ED8)";
-        document.getElementById("tab-lookup-btn").classList.add("text-white");
-        document.getElementById("tab-lookup-btn").classList.remove("text-slate-400");
-        document.getElementById("tab-predict-btn").style.background = "transparent";
-        document.getElementById("tab-predict-btn").classList.remove("text-white");
-        document.getElementById("tab-predict-btn").classList.add("text-slate-400");
-        filterPlayers();
-      }}
+      model.coefficients.forEach(c => {{
+        const fVal = inputValues[c.feature] || 0;
+        const impact = c.weight * fVal;
+        val += impact;
+      }});
+
+      if (val < 2.0) val = 2.0;
+
+      document.getElementById("predicted-val").innerText = val.toFixed(1);
+
+      // Model metadata badge
+      const r2Badge = document.createElement("span");
+      r2Badge.className = "px-2 py-0.5 rounded text-[11px] text-blue-400 border border-blue-500/30";
+      r2Badge.style.backgroundColor = "rgba(37,99,235,0.15)";
+      r2Badge.innerText = `Sub-model R²: ${{(model.metrics.r2 * 100).toFixed(1)}}%`;
+      breakdownEl.appendChild(r2Badge);
+
+      const maeBadge = document.createElement("span");
+      maeBadge.className = "px-2 py-0.5 rounded text-[11px] text-slate-300 border border-slate-700";
+      maeBadge.style.backgroundColor = "#0B0F17";
+      maeBadge.innerText = `MAE: ±€${{model.metrics.mae.toFixed(1)}}M`;
+      breakdownEl.appendChild(maeBadge);
     }}
 
     function predictPlayerStats(p) {{
-      const groupKey = ROLE_TO_GROUP[p.position] || "CF_SS";
-      const model = PLAYER_MODELS[groupKey];
+      let group = "CF_SS";
+      if (["RW", "LW", "LMF", "RMF"].includes(p.position)) group = "WINGERS";
+      else if (p.position === "AMF") group = "AMF";
+      else if (p.position === "CMF") group = "CMF";
+      else if (p.position === "DMF") group = "DMF";
+      else if (p.position === "CB") group = "CB";
+      else if (["RB", "LB"].includes(p.position)) group = "FULLBACK";
+      else if (p.position === "GK") group = "GK";
+
+      const model = PLAYER_MODELS[group];
+      if (!model) return p.market_value_eur_m;
+
       let val = model.intercept;
-      model.coefficients.forEach(coef => {{
-        const v = p[coef.feature] !== undefined ? p[coef.feature] : 0;
-        val += v * coef.weight;
+      model.coefficients.forEach(c => {{
+        const fVal = p[c.feature] !== undefined ? p[c.feature] : 0;
+        val += c.weight * fVal;
       }});
-      return Math.max(0.5, val);
+      return val < 2.0 ? 2.0 : val;
     }}
 
     function setListRoleFilter(role) {{
       listRoleFilter = role;
       document.querySelectorAll(".list-role-btn").forEach(btn => {{
-        if (btn.dataset.lrole === role) {{
+        if (btn.getAttribute("data-lrole") === role) {{
           btn.className = "list-role-btn px-2.5 py-1 rounded-lg font-bold bg-blue-600 text-white";
-          btn.style.backgroundColor = "#2563EB";
         }} else {{
           btn.className = "list-role-btn px-2.5 py-1 rounded-lg font-medium text-slate-400";
           btn.style.backgroundColor = "#0B0F17";
@@ -699,34 +959,47 @@ html_content = f"""<!DOCTYPE html>
     }}
 
     function getRoleSpecificChips(p) {{
-      const pos = p.position;
-      if (pos === "GK") return `<span class="text-indigo-400 font-semibold">${{p.saves}} Saves</span> • <span class="text-red-400 font-semibold">${{p.penalties_saved}} Pens Saved</span> • <span class="text-green-400 font-semibold">${{p.pass_accuracy}}% Pass</span>`;
-      if (pos === "CB") return `<span class="text-orange-400 font-semibold">${{p.duels_won}} Duels</span> • <span class="text-teal-400 font-semibold">${{p.successful_tackles}} Tackles</span> • <span class="text-purple-400 font-semibold">${{p.aerial_duels_won}} Aerials</span>`;
-      if (pos === "RB" || pos === "LB") return `<span class="text-blue-400 font-semibold">${{p.assists}} Assists</span> • <span class="text-orange-400 font-semibold">${{p.duels_won}} Duels</span> • <span class="text-teal-400 font-semibold">${{p.successful_tackles}} Tackles</span>`;
-      if (pos === "DMF") return `<span class="text-amber-400 font-semibold">${{p.line_breaking_passes}} Line Breaks</span> • <span class="text-pink-400 font-semibold">${{p.balls_recovered}} Recoveries</span> • <span class="text-orange-400 font-semibold">${{p.duels_won}} Duels</span>`;
-      if (pos === "CMF") return `<span class="text-amber-400 font-semibold">${{p.line_breaking_passes}} Line Breaks</span> • <span class="text-pink-400 font-semibold">${{p.balls_recovered}} Recoveries</span> • <span class="text-lime-400 font-semibold">${{p.pass_accuracy}}% Pass</span>`;
-      if (pos === "AMF") return `<span class="text-sky-400 font-semibold">${{p.chances_created}} Chances Created</span> • <span class="text-emerald-400 font-semibold">${{p.goals}} Goals</span>`;
-      if (pos === "RW" || pos === "LW") return `<span class="text-emerald-400 font-semibold">${{p.goals}}G / ${{p.assists}}A</span> • <span class="text-sky-400 font-semibold">${{p.chances_created}} Chances</span> • <span class="text-purple-400 font-semibold">${{p.dribbles_completed}} Dribbles</span>`;
-      return `<span class="text-emerald-400 font-semibold">${{p.goals}} Goals</span> • <span class="text-blue-400 font-semibold">${{p.assists}} Assists</span>`;
+      if (p.position === "GK") {{
+        return `<span>${{p.saves}} saves</span><span>•</span><span>${{p.penalties_saved}} pens</span><span>•</span><span>${{p.pass_accuracy}}% pass</span>`;
+      }}
+      if (p.position === "CB") {{
+        return `<span>${{p.duels_won}} duels</span><span>•</span><span>${{p.successful_tackles}} tackles</span><span>•</span><span>${{p.aerial_duels_won}} aerial</span>`;
+      }}
+      if (["RB", "LB"].includes(p.position)) {{
+        return `<span>${{p.assists}} ast</span><span>•</span><span>${{p.duels_won}} duels</span><span>•</span><span>${{p.successful_tackles}} tackles</span>`;
+      }}
+      if (p.position === "DMF") {{
+        return `<span>${{p.balls_recovered}} recov</span><span>•</span><span>${{p.duels_won}} duels</span><span>•</span><span>${{p.line_breaking_passes}} passes</span>`;
+      }}
+      if (p.position === "CMF") {{
+        return `<span>${{p.balls_recovered}} recov</span><span>•</span><span>${{p.line_breaking_passes}} passes</span><span>•</span><span>${{p.pass_accuracy}}% acc</span>`;
+      }}
+      if (["RW", "LW"].includes(p.position)) {{
+        return `<span>${{p.goals}}G / ${{p.assists}}A</span><span>•</span><span>${{p.chances_created}} chances</span><span>•</span><span>${{p.dribbles_completed}} dribbles</span>`;
+      }}
+      if (p.position === "AMF") {{
+        return `<span>${{p.goals}}G / ${{p.assists}}A</span><span>•</span><span>${{p.chances_created}} chances</span>`;
+      }}
+      return `<span>${{p.goals}} goals</span><span>•</span><span>${{p.assists}} assists</span>`;
     }}
 
     function filterPlayers() {{
-      const q = (document.getElementById("player-search").value || "").toLowerCase().trim();
-      const selectedTeam = document.getElementById("team-filter").value;
+      const q = document.getElementById("player-search").value.toLowerCase().trim();
+      const team = document.getElementById("team-filter").value;
       const list = document.getElementById("players-list");
       list.innerHTML = "";
 
       const filtered = ALL_PLAYERS.filter(p => {{
-        const matchesName = p.player_name.toLowerCase().includes(q) || p.team.toLowerCase().includes(q);
-        const matchesTeam = !selectedTeam || p.team === selectedTeam;
+        const matchesQuery = p.player_name.toLowerCase().includes(q);
+        const matchesTeam = !team || p.team === team;
         const matchesRole = !listRoleFilter || p.position === listRoleFilter;
-        return matchesName && matchesTeam && matchesRole;
+        return matchesQuery && matchesTeam && matchesRole;
       }});
 
       document.getElementById("player-count").innerText = `Showing ${{filtered.length}} of ${{ALL_PLAYERS.length}} players`;
 
       if (filtered.length === 0) {{
-        list.innerHTML = `<div class="text-sm text-slate-400 p-8 text-center border rounded-xl" style="background-color: #0B0F17; border-color: #1F293D;">No matching players found.</div>`;
+        list.innerHTML = `<div class="p-8 text-center text-slate-400 text-sm">No players found matching your filters.</div>`;
         return;
       }}
 
